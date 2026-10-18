@@ -2,21 +2,21 @@
  "kand": "sundar",
  "name": "सुन्दरकाण्ड",
  "source": "Text: Goswami Tulsidas (public domain), from the PD-1996 edition on Hindi Wikisource (रामचरितमानस.pdf). Meanings: AI drafts (Gemini) pending scholar review.",
- "generated": "2026-10-18T11:27:12.950Z",
+ "generated": "2026-10-18T11:33:57.439Z",
  "scenes": [],
  "verses": [
   {
    "id": "sk-001",
    "scene": "",
    "type": "श्लोक",
-   "n": "3",
+   "n": "1",
    "lines": [
     "अतुलितबलधामं स्वर्णशैलाभदेहं दनुजवनकृशानुं ज्ञानिनामग्रगण्यम्।",
-    "सकलगुणनिधानं वानराणामधीशं रघुपतिवरदूतं बातजातं'नमामि॥३॥"
+    "सकलगुणनिधानं वानराणामधीशं रघुपतिवरदूतं बातजातं'नमामि॥१॥"
    ],
    "tr": [
-    "atulitabaladhāmaṃ svarṇaśailābhadehaṃ danujavanakṛśānuṃ jñānināmagragaṇyam.",
-    "sakalaguṇanidhānaṃ vānarāṇāmadhīśaṃ raghupativaradūtaṃ vātajātaṃ namāmi..3.."
+    "atulitabaladhāmaṃ svarṇaśailābhadehaṃ danujavanakṛśānuṃ jñānināmagragaṇyam |",
+    "sakalaguṇanidhānaṃ vānarāṇāmadhīśaṃ raghupativaradūtaṃ vātajātaṃ namāmi ||"
    ],
    "words": [
     [
@@ -26,68 +26,93 @@
     ],
     [
      "स्वर्णशैलाभदेहं",
-     "सुमेरु पर्वत के समान कांतियुक्त शरीर वाले",
-     "possessing a body resembling the golden mountain Sumeru"
+     "सुमेरु पर्वत के समान कान्तिमान शरीर वाले",
+     "whose body shines like the golden mountain Meru"
     ],
     [
      "दनुजवनकृशानुं",
-     "राक्षस रूपी वन को भस्म करने वाली अग्नि",
-     "fire that consumes the forest of demons"
+     "राक्षस रूपी वन को भस्म करने के लिए अग्नि स्वरूप",
+     "fire to the forest of demons"
     ],
     [
      "ज्ञानिनामग्रगण्यम्",
-     "ज्ञानियों में सर्वप्रथम गिने जाने वाले",
+     "ज्ञानियों में अग्रगण्य (सबसे आगे गिने जाने वाले)",
      "foremost among the wise"
+    ],
+    [
+     "सकलगुणनिधानं",
+     "समस्त सद्गुणों के भण्डार",
+     "repository of all virtues"
+    ],
+    [
+     "वातजातं",
+     "पवनपुत्र (हनुमान जी)",
+     "son of the Wind God"
     ]
    ],
-   "hi": "अतुलनीय बल के धाम, सुमेरु पर्वत के समान दिव्य कांति वाले शरीर से युक्त, दानव रूपी वन को भस्म करने के लिए अग्नि स्वरूप और ज्ञानियों में अग्रगण्य श्री हनुमान जी को मैं नमन करता हूँ। समस्त गुणों के भंडार, वानरों के स्वामी तथा श्रीराम के प्रिय श्रेष्ठ दूत पवनपुत्र को मैं प्रणाम करता हूँ।",
-   "en": "I bow to Shri Hanuman, the abode of immeasurable strength, whose radiant body shines like the golden mountain Sumeru, who is a consuming fire to the forest of demons, and who is foremost among the wise. I revere the storehouse of all virtues, the lord of monkeys, and the supreme messenger of Shri Rama, born of the wind god.",
-   "ctx_hi": "सुन्दरकाण्ड के मंगलाचरण में हनुमान जी की वंदना करते हुए यह श्लोक कहा गया है।",
-   "ctx_en": "This Sanskrit shloka forms the auspicious opening invocation in praise of Shri Hanuman at the start of Sundarkand.",
+   "hi": "अतुलनीय बल के धाम, सुमेरु पर्वत के समान कान्तिमान शरीर वाले, राक्षस रूपी वन को जलाने वाले अग्नि रूप, ज्ञानियों में अग्रगण्य, समस्त सद्गुणों के भण्डार, वानरों के स्वामी तथा श्रीराम के प्रिय श्रेष्ठ दूत पवनपुत्र श्रीहनुमान जी को मैं प्रणाम करता हूँ।",
+   "en": "I bow to Shri Hanuman, the son of the Wind God, who is the abode of boundless strength, whose body radiates like the golden mountain Meru, who is a consuming fire to the forest of demons, foremost among the wise, the treasure-house of all virtues, the lord of the vanaras, and the supreme messenger of Shri Rama.",
+   "ctx_hi": "सुन्दरकाण्ड के मंगलाचरण में हनुमान जी की वन्दना की गई है।",
+   "ctx_en": "The opening invocation of the Sundara Kanda reverently meditates upon the divine glories of Shri Hanuman.",
+   "suggested_lines": [
+    "अतुलितबलधामं स्वर्णशैलाभदेहं दनुजवनकृशानुं ज्ञानिनामग्रगण्यम्।",
+    "सकलगुणनिधानं वानराणामधीशं रघुपतिवरदूतं वातजातं नमामि॥"
+   ],
    "status": "draft",
    "src": {
     "page": 851,
-    "quality": 3
+    "quality": 3,
+    "num": 3
    }
   },
   {
    "id": "sk-002",
    "scene": "",
    "type": "चौपाई",
-   "n": "1.?",
+   "n": "1.1",
    "lines": [
     "जामवन्त के बचन सुहाये। सुनि हनुमन्त हृदय अति भाये॥",
-    "तब लगि मोहि परिखहु तुम्ह भाई। सहि दुख कन्दमूल फलखाई १॥"
+    "तब लगि मोहि परिखहु तुम्ह भाई। सहि दुख कन्दमूल फलखाई॥१॥"
    ],
    "tr": [
-    "jāmavanta ke bacana suhāye. suni hanumanta hṛdaya ati bhāye..",
-    "taba lagi mohi parikhahu tumha bhāī. sahi dukha kandamūla phala khāī 1.."
+    "jāmavanta ke bacana suhāye | suni hanumanta hṛdaya ati bhāye ||",
+    "taba lagi mohi parikhahu tumha bhāī | sahi dukha kandamūla phala khāī ||"
    ],
    "words": [
     [
      "सुहाये",
-     "सुखद व मनोहर",
-     "pleasant or pleasing"
+     "प्रिय लगने वाले / मनोहर",
+     "pleasing / agreeable"
+    ],
+    [
+     "भाये",
+     "अच्छे लगे",
+     "appealed to / delighted"
     ],
     [
      "परिखहु",
-     "प्रतीक्षा करो",
+     "प्रतीक्षा करो / राह देखो",
      "wait for"
     ],
     [
      "कन्दमूल",
-     "जड़ और कंद",
+     "जंगल की जड़ें और कंद",
      "roots and tubers"
     ]
    ],
-   "hi": "जाम्बवान जी के मधुर और उत्साहवर्धक वचन सुनकर हनुमान जी के मन को बहुत प्रसन्नता हुई। उन्होंने सभी वानर बंधुओं से कहा कि हे भाइयो, आप सभी कंद-मूल-फल खाकर और कष्ट सहकर तब तक मेरी प्रतीक्षा करना।",
-   "en": "Hearing Jambavan's encouraging words, Shri Hanuman felt immense joy in his heart. He said, 'O brothers, bear the hardship, sustain yourselves on roots and fruits, and wait for me here.'",
-   "ctx_hi": "लंका प्रस्थान से पूर्व हनुमान जी अपने वानर साथियों को धैर्यपूर्वक प्रतीक्षा करने को कहते हैं।",
-   "ctx_en": "Before leaping towards Lanka, Shri Hanuman asks his monkey companions to wait patiently for his return.",
+   "hi": "जाम्बवान जी के मनोहर वचन सुनकर हनुमान जी के मन को बहुत भाए। उन्होंने कहा कि हे भाइयो! जब तक मैं न लौटूँ, तब तक आप लोग कन्द-मूल-फल खाकर और कष्ट सहकर मेरी प्रतीक्षा करना।",
+   "en": "Hearing the pleasing words of Jambavan, Hanuman Ji felt immense joy in his heart. He said, 'O brothers, endure hardships and sustain yourselves on roots and fruits while waiting for my return.'",
+   "ctx_hi": "हनुमान जी लंका प्रस्थान से पूर्व अंगद आदि वानर साथियों को धीरज बँधाते हैं।",
+   "ctx_en": "Before leaping toward Lanka, Hanuman Ji instructs his vanara companions to wait patiently with fortitude.",
+   "suggested_lines": [
+    "जामवन्त के बचन सुहाये। सुनि हनुमन्त हृदय अति भाये॥",
+    "तब लगि मोहि परिखहु तुम्ह भाई। सहि दुख कन्दमूल फल खाई॥"
+   ],
    "status": "draft",
    "src": {
     "page": 851,
-    "quality": 3
+    "quality": 3,
+    "num": null
    }
   },
   {
@@ -100,34 +125,49 @@
     "अस कहि नाइ सबन्हि कहूँ माथा।चलेउ हरषि हियँ धरि रघुनाथा॥२॥"
    ],
    "tr": [
-    "jaba lagi āva'u~ sītahi dekhī. hoi kāja mohi haraṣa bisekī..",
-    "asa kahi nāi sabanhi kahū~ māthā. caleu haraṣi hiya~ dhari raghunāthā..2.."
+    "jaba lagi āvauom sītahi dekhī | hoi kāja mohi haraṣa bisekī ||",
+    "asa kahi nāi sabanhi kahūom māthā | caleu haraṣi hiyaom dhari raghunāthā ||"
    ],
    "words": [
     [
-     "हरष",
-     "हर्ष या प्रसन्नता",
-     "joy or delight"
+     "आवउँ",
+     "लौट आऊँ",
+     "I return"
     ],
     [
-     "बिसेखी",
-     "विशेष रूप से",
-     "especially or exceedingly"
+     "सीतहि",
+     "सीता जी को",
+     "Sita Ji"
+    ],
+    [
+     "बिखेकी/बिसेखी",
+     "विशेष रूप से / अत्यधिक",
+     "immensely / exceedingly"
     ],
     [
      "नाइ",
-     "झुकाकर",
+     "नवाकर / झुकाकर",
      "bowing"
+    ],
+    [
+     "हियँ",
+     "हृदय में",
+     "in heart"
     ]
    ],
-   "hi": "जब तक मैं सीता जी के दर्शन करके वापस न लौट आऊँ, तब तक धीरज रखें; मुझे मन में विशेष हर्ष हो रहा है, जिससे स्पष्ट है कि कार्य अवश्य सफल होगा। ऐसा कहकर और सभी को सिर नवाकर, वे अपने हृदय में श्रीराम का ध्यान धरते हुए प्रसन्नतापूर्वक चल पड़े।",
-   "en": "'Wait until I return after seeing Sita Ji; my heart feels a deep inner joy that assures me our mission will succeed.' Saying this and bowing his head to all, he joyously departed, holding Shri Rama firmly in his heart.",
-   "ctx_hi": "हनुमान जी को अपने अंतःकरण में कार्य की पूर्ण सिद्धि का पूर्वाभास हो जाता है।",
-   "ctx_en": "Shri Hanuman intuitively senses the auspicious certainty of his mission's success through divine joy in his heart.",
+   "hi": "जब तक मैं सीता जी को देखकर लौट न आऊँ, तब तक धीरज रखें; मुझे हृदय में विशेष हर्ष हो रहा है जिससे विश्वास है कि कार्य सिद्ध होगा। ऐसा कहकर और सभी को मस्तक नवाकर, हनुमान जी प्रसन्नचित्त होकर तथा हृदय में श्रीराम को धारण करके चल पड़े।",
+   "en": "'Until I return after finding Sita Ji, remain steadfast; my heart feels great joy, assuring me that the mission will succeed.' Saying this and bowing his head to all, he departed joyfully, holding Shri Rama firmly in his heart.",
+   "ctx_hi": "श्रीराम की कृपा और प्रभु-स्मरण से हनुमान जी पूर्ण विश्वास के साथ लंका की ओर प्रस्थान करते हैं।",
+   "ctx_en": "Holding Shri Rama in his heart, Hanuman Ji sets forth with absolute confidence and enthusiasm.",
+   "suggested_lines": [
+    "जब लगि आवउँ सीतहि देखी। होइ काज मोहि हरष बिसेखी॥",
+    "अस कहि नाइ सबन्हि कहूँ माथा। चलेउ हरषि हियँ धरि रघुनाथा॥"
+   ],
    "status": "draft",
    "src": {
     "page": 851,
-    "quality": 3
+    "quality": 3,
+    "num": 2
    }
   },
   {
@@ -140,10 +180,15 @@
     "बार बार रघुबीर सँभारी। तरकेउ पवन-तनय बल भारी॥३॥"
    ],
    "tr": [
-    "sindhu tīra eka bhūdhara sundara. kautuka kūdi caṛheu tā ūparā..",
-    "bāra bāra raghubīra sam̐bhārī. tarakeu pavana-tanaya bala bhārī..3.."
+    "sindhu tīra eka bhūdhara sundara | kautuka kūdi caṛheu tā ūparā ||",
+    "bāra bāra raghubīra sam̐bhārī | tarakeu pavana-tanaya bala bhārī ||"
    ],
    "words": [
+    [
+     "सिन्धु तीर",
+     "समुद्र का तट",
+     "seashore"
+    ],
     [
      "भूधर",
      "पर्वत",
@@ -151,23 +196,33 @@
     ],
     [
      "कौतुक",
-     "खेल ही खेल में",
-     "effortlessly or playfully"
+     "खेल-खेल में / सहज ही",
+     "playfully / effortlessly"
+    ],
+    [
+     "सँभारी",
+     "स्मरण करके",
+     "remembering / invoking"
     ],
     [
      "तरकेउ",
-     "उछले या छलांग लगाई",
-     "leaped or surged forward"
+     "उछले / छलांग लगाई",
+     "leapt"
     ]
    ],
-   "hi": "समुद्र के तट पर एक सुंदर पर्वत था, जिस पर हनुमान जी खेल ही खेल में कूदकर चढ़ गए। वहाँ पहुँचकर महाबली पवनपुत्र ने बार-बार श्री रघुवीर का स्मरण किया और पूरे बल के साथ आकाश की ओर छलांग लगाई।",
-   "en": "On the seashore stood a magnificent mountain, upon which Shri Hanuman leaped effortlessly. Repeatedly remembering Shri Rama, the mighty son of the wind god sprang forward with immense power.",
-   "ctx_hi": "हनुमान जी का समुद्र लांघने के लिए पर्वत से प्रस्थान करना अलौकिक शक्ति और प्रभु-स्मरण का प्रतीक है।",
-   "ctx_en": "Shri Hanuman's mighty leap from the coastal peak marks the grand commencement of his flight across the ocean.",
+   "hi": "समुद्र तट पर एक सुन्दर पर्वत था, जिस पर हनुमान जी खेल ही खेल में कूदकर चढ़ गए। बार-बार श्रीरघुवीर का स्मरण करके महाबली पवनपुत्र हनुमान जी ने बड़े वेग से छलांग लगाई।",
+   "en": "There was a beautiful mountain on the seashore, atop which Hanuman Ji bounded effortlessly in sport. Remembering Shri Rama again and again, the mighty son of the Wind God gathered his immense strength and took a tremendous leap.",
+   "ctx_hi": "हनुमान जी समुद्र लाँघने के लिए पर्वत शिखर से विशाल छलांग लगाते हैं।",
+   "ctx_en": "Hanuman Ji leaps from the mountain peak to begin his monumental journey across the ocean.",
+   "suggested_lines": [
+    "सिन्धु तीर एक भूधर सुन्दर। कौतुक कूदि चढ़ेउ ता ऊपर॥",
+    "बार बार रघुबीर सँभारी। तरकेउ पवन-तनय बल भारी॥"
+   ],
    "status": "draft",
    "src": {
     "page": 851,
-    "quality": 3
+    "quality": 3,
+    "num": 3
    }
   },
   {
@@ -180,34 +235,44 @@
     "जिमि अमोघ रघुपति कर बाना। तेही भाँति चला हनुमाना॥४॥"
    ],
    "tr": [
-    "jehi giri carana dei hanumantā. caleu so gā pātāla turantā..",
-    "jimi amogha raghupati kara bānā. tehī bhā~ti calā hanumānā..4.."
+    "jehi giri carana dei hanumantā | caleu so gā pātāla turantā ||",
+    "jimi amogha raghupati kara bānā | tehī bhām̐ti calā hanumānā ||"
    ],
    "words": [
     [
-     "गिरि",
+     "गिरा/गिरि",
      "पर्वत",
      "mountain"
     ],
     [
+     "चरन देइ",
+     "पैर दबाकर / पाँव रखकर",
+     "pressing his feet upon"
+    ],
+    [
      "तुरन्ता",
-     "शीघ्र ही",
+     "तुरंत / उसी क्षण",
      "instantly"
     ],
     [
      "अमोघ",
-     "अचूक या कभी व्यर्थ न होने वाला",
-     "unerring or unfailing"
+     "अचूक (जो लक्ष्य से कभी न चूके)",
+     "unfailing / unerring"
     ]
    ],
-   "hi": "हनुमान जी ने जिस पर्वत पर चरण रखकर छलांग लगाई, वह उनके भारी दबाव से तुरंत पाताल में धँस गया। जिस प्रकार श्रीराम का बाण लक्ष्य से कभी नहीं चूकता, ठीक उसी वेग और अचूक दिशा में हनुमान जी आगे बढ़ चले।",
-   "en": "The mountain on which Shri Hanuman pressed his feet instantly sank into the subterranean depths under his immense force. Exactly like the unfailing arrow released from Shri Rama's bow, Shri Hanuman sped forward on his path.",
-   "ctx_hi": "हनुमान जी की तीव्र गति की उपमा श्रीराम के अचूक अमोघ बाण से दी गई है।",
-   "ctx_en": "Shri Hanuman's relentless and unswerving flight is compared to the infallible arrow of Shri Rama.",
+   "hi": "जिस पर्वत पर पैर रखकर हनुमान जी उछले, वह उनके भार से तुरंत पाताल में धँस गया। जिस प्रकार श्रीराम का अचूक बाण छूटने पर सीधा लक्ष्य की ओर जाता है, उसी प्रकार हनुमान जी तीव्र गति से चल पड़े।",
+   "en": "The mountain that Hanuman Ji pressed his feet upon to leap instantly sank down into the netherworld. Like the unerring arrow released from Shri Rama's bow, Hanuman Ji sped straight and swift on his path.",
+   "ctx_hi": "हनुमान जी के अद्भुत बल और श्रीराम के बाण जैसी उनकी अचूक व तीव्र गति का वर्णन है।",
+   "ctx_en": "The verse illustrates Hanuman Ji's immense power and his arrow-like, unswerving flight toward Lanka.",
+   "suggested_lines": [
+    "जेहि गिरि चरन देइ हनुमन्ता। चलेउ सो गा पाताल तुरन्ता॥",
+    "जिमि अमोघ रघुपति कर बाना। तेही भाँति चला हनुमाना॥"
+   ],
    "status": "draft",
    "src": {
     "page": 851,
-    "quality": 3
+    "quality": 3,
+    "num": 4
    }
   },
   {
@@ -220,34 +285,44 @@
     "राम-काज कीन्हे बिनु, मोहि कहाँ विश्राम॥१॥"
    ],
    "tr": [
-    "hanūmāna tehi parasā, kara puni kīnha pranāma.",
-    "rāma-kāja kīnhe binu, mohi kahā~ viśrāma..1.."
+    "hanūmāna tehi parasā kara puni kīnha pranāma |",
+    "rāma-kāja kīnhe binu mohi kahām̐ viśrāma ||"
    ],
    "words": [
     [
+     "तेहि",
+     "उसको (मैनाक पर्वत को)",
+     "him (Mainaka mountain)"
+    ],
+    [
      "परसा",
-     "स्पर्श किया",
+     "स्पर्श किया / छुआ",
      "touched"
     ],
     [
-     "कीन्ह",
-     "किया",
-     "performed or offered"
+     "कर",
+     "हाथ से",
+     "with the hand"
     ],
     [
      "विश्राम",
-     "आराम",
+     "आराम / विश्राम",
      "rest"
     ]
    ],
-   "hi": "हनुमान जी ने मैनाक पर्वत को केवल हाथ से छूकर सम्मान दिया और प्रणाम करते हुए कहा कि जब तक श्रीराम का कार्य पूरा न हो जाए, तब तक मेरे लिए विश्राम कैसा?",
-   "en": "Shri Hanuman merely touched the Mainaka mountain with his hand, offered his respects, and said, 'Until the service of Shri Rama is accomplished, where is the question of rest for me?'",
-   "ctx_hi": "मैनाक के विश्राम के आग्रह पर हनुमान जी की अनन्य सेवा-निष्ठा और तत्परता प्रकट होती है।",
-   "ctx_en": "When Mainaka invites him to rest, Shri Hanuman exemplifies unwavering devotion to selfless service without pause.",
+   "hi": "हनुमान जी ने मैनाक पर्वत को हाथ से छूकर प्रणाम किया और आदरपूर्वक कहा कि श्रीराम का कार्य पूरा किए बिना मेरे लिए विश्राम कहाँ हो सकता है!",
+   "en": "Hanuman Ji gently touched the Mainaka mountain with his hand, saluted him, and said, 'Until Shri Rama's work is accomplished, where is the question of rest for me?'",
+   "ctx_hi": "मार्ग में विश्राम देने आए मैनाक पर्वत का हनुमान जी सत्कार करते हैं, पर प्रभु-कार्य को सर्वोपरि रखते हैं।",
+   "ctx_en": "Hanuman Ji courteously honors the hospitality of Mount Mainaka but affirms that divine duty admits no rest.",
+   "suggested_lines": [
+    "हनूमान तेहि परसा कर पुनि कीन्ह प्रनाम।",
+    "राम-काज कीन्हे बिनु मोहि कहाँ बिश्राम॥"
+   ],
    "status": "draft",
    "src": {
     "page": 854,
-    "quality": 3
+    "quality": 3,
+    "num": 1
    }
   },
   {
@@ -260,19 +335,24 @@
     "सुरसा नाम अहिन्ह कै माता। पठइन्हि आइ कही तेहिं बाता॥१॥"
    ],
    "tr": [
-    "jāta pavana suta devanha dekhā. jāna'i kahA~ bala buddhi bisekhā..",
-    "surasā nāma ahinha kai mātā. paṭhainhi āi kahī tehiṃ bātā..1.."
+    "jāta pavana suta devanha dekhā | jānai kaham̐ bala buddhi bisekhā ||",
+    "surasā nāma ahinha kai mātā | paṭhainhi āi kahī tehiṃ bātā ||"
    ],
    "words": [
+    [
+     "पवन सुत",
+     "पवनपुत्र (हनुमान जी)",
+     "son of the Wind God"
+    ],
     [
      "देवन्ह",
      "देवताओं ने",
      "the gods"
     ],
     [
-     "अहिन्ह",
-     "सर्पों की",
-     "of serpents"
+     "अहिन्ह कै माता",
+     "सर्पों की माता",
+     "mother of serpents"
     ],
     [
      "पठइन्हि",
@@ -280,14 +360,19 @@
      "sent"
     ]
    ],
-   "hi": "देवताओं ने पवनपुत्र हनुमान जी को जाते देखा, तो उन्होंने उनके विशिष्ट बल और बुद्धि की परीक्षा लेने का विचार किया। उन्होंने सर्पों की माता सुरसा को भेजा, जिसने आकर हनुमान जी से मार्ग में बात कही।",
-   "en": "Seeing the son of the wind god speeding through the skies, the gods wished to test the specialty of his strength and intellect. They sent Surasa, the mother of serpents, who appeared before him and spoke.",
-   "ctx_hi": "देवताओं द्वारा हनुमान जी की योग्यता और युक्ति की परीक्षा लेने का प्रसंग यहाँ से आरंभ होता है।",
-   "ctx_en": "The celestials seek to verify Shri Hanuman's strength and ingenuity before he reaches the stronghold of Lanka.",
+   "hi": "देवताओं ने पवनपुत्र हनुमान जी को जाते देखा, तो उनके विशेष बल और बुद्धि की परीक्षा लेने के लिए उन्होंने सर्पों की माता सुरसा को भेजा, जिसने आकर उनसे यह बात कही।",
+   "en": "The gods observed Hanuman Ji flying across the ocean and, in order to test the depth of his strength and intellect, sent Surasa, the mother of serpents, who approached him and spoke.",
+   "ctx_hi": "देवगण लंका-अभियान के निमित्त हनुमान जी की शक्ति और युक्ति की परीक्षा लेते हैं।",
+   "ctx_en": "The celestials arrange a test to confirm that Hanuman Ji possesses both the strength and wisdom needed for his mission.",
+   "suggested_lines": [
+    "जात पवन सुत देवन्ह देखा। जानइ कहँ बल बुद्धि बिसेखा॥",
+    "सुरसा नाम अहिन्ह कै माता। पठइन्हि आइ कही तेहिं बाता॥"
+   ],
    "status": "draft",
    "src": {
     "page": 854,
-    "quality": 3
+    "quality": 3,
+    "num": 1
    }
   },
   {
@@ -300,34 +385,44 @@
     "राम-काज करि फिरि में आवउँ।सीता कै सुधि प्रभुहि सुनावउँ॥२॥"
    ],
    "tr": [
-    "āju suranha mohi dīnha ahārā. sunata bacana kaheu pavana-kumārā..",
-    "rāma-kāja kari phiri maiṃ āva'u~. sītā kai sudhi prabhuhi sunāva'u~..2.."
+    "āju suranha mohi dīnha ahārā | sunata bacana kaheu pavana-kumārā ||",
+    "rāma-kāja kari phiri maim̐ āvauom | sītā kai sudhi prabhuhi sunāvauom ||"
    ],
    "words": [
     [
      "सुरन्ह",
      "देवताओं ने",
-     "the gods"
+     "by the gods"
     ],
     [
      "अहारा",
-     "भोजन या आहार",
-     "food or sustenance"
+     "भोजन / आहार",
+     "food / meal"
+    ],
+    [
+     "फिरि",
+     "लौटकर",
+     "having returned"
     ],
     [
      "सुधि",
-     "समाचार या खोज-खबर",
-     "news or tidings"
+     "समाचार / खोज-खबर",
+     "news / intelligence"
     ]
    ],
-   "hi": "सुरसा ने कहा कि आज देवताओं ने मुझे तुमको भोजन के रूप में दिया है। यह वचन सुनकर पवनपुत्र हनुमान जी ने विनम्रता से कहा कि मैं पहले श्रीराम का कार्य संपन्न करके और सीता जी का समाचार प्रभु को सुनाकर वापस लौट आऊँ।",
-   "en": "Surasa declared, 'Today the gods have granted you to me as my food.' Hearing these words, the son of the wind god gently replied, 'Let me first accomplish the mission of Shri Rama and deliver tidings of Sita Ji to the Lord.'",
-   "ctx_hi": "हनुमान जी सुरसा से प्रभु-कार्य पूर्ण होने तक प्रतीक्षा करने का सविनय निवेदन करते हैं।",
-   "ctx_en": "Shri Hanuman politely urges Surasa to defer her feast until he completes his sacred assignment for Shri Rama.",
+   "hi": "सुरसा ने कहा कि आज देवताओं ने मुझे तुमको भोजन के रूप में दिया है। यह वचन सुनकर पवनपुत्र हनुमान जी ने विनम्रतापूर्वक कहा कि मैं श्रीराम का कार्य पूरा करके और सीता जी का समाचार प्रभु को सुनाकर लौट आऊँ।",
+   "en": "Surasa said, 'Today the gods have granted you to me as my food.' Hearing these words, Hanuman Ji replied, 'Let me first accomplish the mission of Shri Rama and deliver news of Sita Ji to the Lord, then I will return.'",
+   "ctx_hi": "मार्ग रोक रही सुरसा से हनुमान जी प्रभु-कार्य संपन्न होने तक प्रतीक्षा करने का निवेदन करते हैं।",
+   "ctx_en": "Encountering Surasa's challenge, Hanuman Ji politely requests time to finish the Lord's work first.",
+   "suggested_lines": [
+    "आजु सुरन्ह मोहि दीन्ह अहारा। सुनत बचन कहेउ पवन-कुमारा॥",
+    "राम-काज करि फिरि मैं आवउँ। सीता कै सुधि प्रभुहि सुनावउँ॥"
+   ],
    "status": "draft",
    "src": {
     "page": 854,
-    "quality": 3
+    "quality": 3,
+    "num": 2
    }
   },
   {
@@ -340,8 +435,8 @@
     "कवनेहुँ जतन देइ नहिं जाना। ग्रससि न मोहि कहेउ हनुमाना॥३॥"
    ],
    "tr": [
-    "taba tava badana paiṭhihauṁ āī | satya kahauṁ mohi jāna de māī ||",
-    "kavanehuṁ jatana dei nahiṁ jānā | grasasi na mohi kaheu hanūmānā ||"
+    "taba tava badana paiṭhihauṃ āī | satya kahauṃ mohi jāna de māī ||",
+    "kavanehu~ jatana dei nahiṃ jānā | grasasi na mohi kaheu hanumānā ||"
    ],
    "words": [
     [
@@ -352,27 +447,33 @@
     [
      "पइठिहौं",
      "प्रवेश करूँगा",
-     "shall enter"
+     "will enter"
     ],
     [
-     "कवनेहुँ जतन",
-     "किसी भी उपाय से",
-     "by any means"
+     "कवनेहुँ",
+     "किसी भी",
+     "by any"
+    ],
+    [
+     "जतन",
+     "उपाय",
+     "effort/means"
     ],
     [
      "ग्रससि",
-     "निगल ले / ग्रस ले",
-     "swallow / devour"
+     "निगल ले / खा ले",
+     "devour/swallow"
     ]
    ],
-   "hi": "हनुमान जी ने कहा कि हे माता! मैं लौटकर तुम्हारे मुख में प्रवेश करूँगा, सच कहता हूँ, अभी मुझे जाने दो। जब उसने किसी भी उपाय से जाने नहीं दिया, तब हनुमान जी ने कहा—फिर मुझे ग्रस क्यों नहीं लेती!",
-   "en": "Hanuman Ji pleaded, \"O Mother, upon my return I shall come and enter your mouth; I speak the truth, please let me proceed now.\" When she would not let him go by any means, Hanuman Ji said, \"Then why do you not devour me?\"",
-   "ctx_hi": "हनुमान जी सुरसा से विनम्र प्रार्थना करते हैं, किंतु जब वह नहीं मानती तो वे परीक्षा का सामना करने को तैयार होते हैं।",
-   "ctx_en": "Hanuman Ji politely reasons with Surasa, but when she remains adamant, he prepares to face her challenge.",
+   "hi": "हनुमान जी ने सुरसा से कहा कि हे माता! मैं लौटकर स्वयं तुम्हारे मुख में प्रवेश करूँगा, सत्य कहता हूँ अभी मुझे जाने दो। जब उसने किसी भी उपाय से जाने नहीं दिया, तब हनुमान जी ने कहा कि तो फिर तुम मुझे ग्रस क्यों नहीं लेतीं?",
+   "en": "Hanuman Ji said, 'Mother, I swear that upon my return I shall enter your mouth; please allow me to go now.' When she would not let him pass by any means, Hanuman Ji said, 'Then why do you not devour me?'",
+   "ctx_hi": "हनुमान जी ने सुरसा को माता कहकर विनम्रता से समझाने का पूरा प्रयास किया।",
+   "ctx_en": "Hanuman Ji respectfully addressed Surasa as mother and tried earnestly to persuade her before taking up the challenge.",
    "status": "draft",
    "src": {
     "page": 855,
-    "quality": 3
+    "quality": 3,
+    "num": 3
    }
   },
   {
@@ -385,39 +486,49 @@
     "सोरह जोजन मुख तेहि ठयऊ। तुरत पवन-सुत बत्तिस भयऊ॥४॥"
    ],
    "tr": [
-    "jojana bhari tehi badana pasārā | kapi ttanu kīnha duguna vistārā ||",
-    "soraha jojana mukha tehi ṭhayaū | turata pawana-suta battisa bhayaū ||"
+    "jojana bhari tehiṃ badana pasārā | kapi tanu kīnha duguna bistārā ||",
+    "soraha jojana mukha tehiṃ ṭhayaū | turata pavana-suta battisa bhayaū ||"
    ],
    "words": [
     [
      "जोजन",
-     "योजन (दूरी का प्राचीन माप, लगभग चार कोस)",
-     "yojana (ancient measure of distance, approx. 8-9 miles)"
+     "योजन (चार कोस की दूरी)",
+     "yojana (a measure of distance)"
     ],
     [
      "पसारा",
      "फैलाया",
-     "expanded / stretched"
+     "expanded/stretched"
+    ],
+    [
+     "दुगुन",
+     "दोगुना",
+     "double"
     ],
     [
      "ठयऊ",
-     "बनाया / ठाना",
-     "made / opened"
+     "बनाया / फैलाया",
+     "made/assumed"
     ],
     [
-     "पवन-सुत",
-     "पवनपुत्र हनुमान जी",
-     "the son of the Wind, Hanuman"
+     "बत्तिस",
+     "बत्तीस",
+     "thirty-two"
     ]
    ],
-   "hi": "सुरसा ने एक योजन (चार कोस) चौड़ा मुख फैलाया, तो हनुमान जी ने अपने शरीर का विस्तार उससे दोगुना कर लिया। जब उसने सोलह योजन का मुख बनाया, तो पवनपुत्र तुरंत बत्तीस योजन के हो गए।",
-   "en": "Surasa expanded her mouth to a yojana wide, whereupon Hanuman Ji doubled the size of his body. When she opened her mouth to sixteen yojanas, the son of the Wind promptly grew to thirty-two yojanas.",
-   "ctx_hi": "सुरसा और हनुमान जी के बीच विशाल रूप धारण करने की अद्भुत होड़ होने लगी।",
-   "ctx_en": "A contest of size unfolds as both Surasa and Hanuman Ji expand their forms.",
+   "hi": "सुरसा ने एक योजन (चार कोस) तक अपना मुँह फैलाया, तो हनुमान जी ने अपने शरीर का विस्तार उससे दोगुना कर लिया। फिर उसने सोलह योजन का मुख फैलाया, तो पवनपुत्र तुरंत बत्तीस योजन के हो गए।",
+   "en": "Surasa expanded her mouth to a yojana, so Hanuman Ji doubled the size of his body. When she opened her mouth to sixteen yojanas, the son of the Wind God instantly became thirty-two yojanas large.",
+   "ctx_hi": "सुरसा के अहंकार को देखकर हनुमान जी ने अपने शरीर को कई गुना बढ़ा लिया।",
+   "ctx_en": "Matching Surasa's challenge, Hanuman Ji expanded his form manifold to test her limits.",
+   "suggested_lines": [
+    "जोजन भरि तेहिं बदन पसारा। कपि तनु कीन्ह दुगुन बिस्तारा॥",
+    "सोरह जोजन मुख तेहिं ठयऊ। तुरत पवनसुत बत्तिस भयऊ॥"
+   ],
    "status": "draft",
    "src": {
     "page": 855,
-    "quality": 3
+    "quality": 3,
+    "num": 4
    }
   },
   {
@@ -431,38 +542,39 @@
    ],
    "tr": [
     "jasa jasa surasā badana baṛhāvā | tāsu dūna kapi rūpa dekhāvā ||",
-    "sata jojana tehi ānana kīnhā | ati laghu rūpa pawana-suta līnhā ||"
+    "sata jojana tehiṃ ānana kīnhā | ati laghu rūpa pavana-suta līnhā ||"
    ],
    "words": [
     [
-     "दून",
-     "दोगुना",
-     "double"
+     "आनन्",
+     "मुख",
+     "mouth/face"
     ],
     [
      "सत जोजन",
      "सौ योजन",
-     "a hundred yojanas"
-    ],
-    [
-     "आनन",
-     "मुख",
-     "face / mouth"
+     "hundred yojanas"
     ],
     [
      "अति लघु",
-     "अत्यंत छोटा / सूक्ष्म",
-     "extremely minute / tiny"
+     "अत्यंत छोटा",
+     "extremely small/minute"
+    ],
+    [
+     "दून",
+     "दोगुना",
+     "double"
     ]
    ],
-   "hi": "जैसे-जैसे सुरसा मुख बढ़ाती गई, हनुमान जी ने उससे दोगुना रूप दिखाया। जब उसने सौ योजन का मुख फैला लिया, तब पवनपुत्र हनुमान जी ने तुरंत अत्यंत सूक्ष्म रूप धारण कर लिया।",
-   "en": "As Surasa expanded her mouth wider and wider, Hanuman Ji displayed a form twice as large as hers. When she stretched her mouth to a hundred yojanas, the son of the Wind took on an extremely tiny form.",
-   "ctx_hi": "बल के प्रदर्शन के बाद हनुमान जी ने अपनी तीव्र बुद्धि और चतुराई का प्रयोग किया।",
-   "ctx_en": "Displaying sharp intellect after showing immense strength, Hanuman Ji adopts a minute form.",
+   "hi": "जैसे-जैसे सुरसा अपना मुख बढ़ाती गई, हनुमान जी ने उससे दोगुना रूप दिखाया। जब उसने सौ योजन का मुख बनाया, तब पवनपुत्र हनुमान जी ने तुरंत अत्यंत छोटा रूप धारण कर लिया।",
+   "en": "As Surasa enlarged her mouth, Hanuman Ji displayed a form twice as large. When she stretched her mouth to a hundred yojanas, the son of the Wind God assumed a tiny form.",
+   "ctx_hi": "यहाँ हनुमान जी ने अपने अतुलित बल के साथ-साथ अद्भुत चातुर्य और बुद्धि का प्रदर्शन किया।",
+   "ctx_en": "Here Hanuman Ji demonstrated his extraordinary intellect alongside his immense strength.",
    "status": "draft",
    "src": {
     "page": 855,
-    "quality": 3
+    "quality": 3,
+    "num": 5
    }
   },
   {
@@ -475,8 +587,8 @@
     "मोहि सुरन्ह जेहि लागि पठावा। बुधि-बल-मरम तार मैं पावा॥६॥"
    ],
    "tr": [
-    "badana paiṭhi puni bāhera āvā | mām̐gā bidā tāhi sira nāvā ||",
-    "mohi suranha jehi lāgi paṭhāvā | budhi-bala-marama tāra maiṁ pāvā ||"
+    "badana paiṭhi puni bāhera āvā | mā~gā bidā tāhi sira nāvā ||",
+    "mohi suranha jehi lāgi paṭhāvā | budhi-bala-marama tora maiṃ pāvā ||"
    ],
    "words": [
     [
@@ -486,8 +598,8 @@
     ],
     [
      "सिर नावा",
-     "सिर झुकाकर / प्रणाम करके",
-     "bowing the head"
+     "सिर झुकाया / प्रणाम किया",
+     "bowed head"
     ],
     [
      "सुरन्ह",
@@ -497,17 +609,22 @@
     [
      "मरम",
      "भेद / रहस्य",
-     "secret / true extent"
+     "secret/depth"
     ]
    ],
-   "hi": "हनुमान जी सुरसा के मुख में प्रवेश कर तुरंत बाहर निकल आए और उसे सिर झुकाकर प्रणाम करते हुए विदा माँगी। तब सुरसा ने कहा कि देवताओं ने मुझे जिस प्रयोजन से भेजा था, मैंने तुम्हारे बुद्धि और बल का भेद पा लिया है।",
-   "en": "Hanuman Ji darted into her mouth and promptly came out again, and bowing his head, he sought permission to depart. Surasa said, \"I have realized the true depth of your intellect and strength, for which the gods had sent me.\"",
-   "ctx_hi": "हनुमान जी ने सुरसा की बात भी पूरी रखी और बिना समय गँवाए परीक्षा में उत्तीर्ण हो गए।",
-   "ctx_en": "Hanuman Ji fulfilled Surasa's condition with cleverness and passed the celestial trial.",
+   "hi": "हनुमान जी सुरसा के मुख में प्रवेश करके तुरंत बाहर निकल आए और सिर झुकाकर प्रणाम करते हुए उससे विदा माँगी। सुरसा ने कहा कि देवताओं ने मुझे जिस प्रयोजन से भेजा था, मैंने तुम्हारी बुद्धि और बल का रहस्य जान लिया है।",
+   "en": "Hanuman Ji entered her mouth and quickly came out, then bowed his head and sought her permission to depart. Surasa said, 'The purpose for which the gods sent me has been accomplished, for I have fathomed the depth of your wisdom and strength.'",
+   "ctx_hi": "सुरसा के मुख में जाकर बाहर आने से उसका वचन भी पूरा हुआ और हनुमान जी की परीक्षा भी संपन्न हुई।",
+   "ctx_en": "By entering and exiting her mouth, Hanuman Ji fulfilled her vow while successfully passing the gods' test.",
+   "suggested_lines": [
+    "बदन पइठि पुनि बाहेर आवा। माँगा बिदा ताहि सिरु नावा॥",
+    "मोहि सुरन्ह जेहि लागि पठावा। बुधि बल मरम तोर मैं पावा॥"
+   ],
    "status": "draft",
    "src": {
     "page": 855,
-    "quality": 3
+    "quality": 3,
+    "num": 6
    }
   },
   {
@@ -525,34 +642,30 @@
    ],
    "words": [
     [
-     "रामकाज",
-     "श्रीराम का कार्य",
-     "the work of Shri Rama"
-    ],
-    [
-     "बल-बुद्धि-निधान",
-     "बल और बुद्धि के भंडार",
-     "abode of strength and intellect"
+     "निधान",
+     "भंडार / खजाना",
+     "abode/treasury"
     ],
     [
      "आसिष",
      "आशीर्वाद",
-     "blessing"
+     "blessings"
     ],
     [
      "हरषि",
      "प्रसन्न होकर",
-     "joyfully / happily"
+     "joyfully/gladly"
     ]
    ],
-   "hi": "सुरसा ने कहा कि आप बल और बुद्धि के भंडार हैं, आप श्रीराम का सारा कार्य सिद्ध करेंगे। ऐसा आशीर्वाद देकर वह चली गई और हनुमान जी हर्षित होकर आगे बढ़ चले।",
-   "en": "Surasa said, \"You are a repository of both strength and wisdom; you will accomplish all of Shri Rama's work.\" Offering her blessings, she departed, and Hanuman Ji joyfully journeyed onward.",
-   "ctx_hi": "सुरसा का आशीर्वाद पाकर हनुमान जी का मार्ग निष्कंटक हो गया।",
-   "ctx_en": "Blessed by Surasa, Hanuman Ji advances with renewed joy and assurance.",
+   "hi": "सुरसा ने कहा कि आप बल और बुद्धि के भंडार हैं, आप श्रीराम का सारा कार्य सिद्ध करेंगे। ऐसा आशीर्वाद देकर वह चली गई और हनुमान जी हर्षित होकर आगे बढ़ गए।",
+   "en": "Surasa said, 'You are an abode of strength and wisdom; you shall accomplish all of Shri Rama's work.' Blessing him thus, she departed, and Hanuman Ji joyfully moved forward.",
+   "ctx_hi": "सुरसा ने प्रसन्न होकर हनुमान जी की सफलता का आशीर्वाद दिया।",
+   "ctx_en": "Pleased with his humility and wit, Surasa blessed Hanuman Ji for the success of his mission.",
    "status": "draft",
    "src": {
     "page": 856,
-    "quality": 3
+    "quality": 3,
+    "num": 2
    }
   },
   {
@@ -565,17 +678,17 @@
     "जीव-जन्तु जे गगन उड़ाहीं। जल बिलोकि तिन्ह कै परिछाहीं॥१॥"
    ],
    "tr": [
-    "nisicari eka sindhu maha rahaī | kari māyā nama ke khaga gahaī ||",
-    "jīva-jantu je gagana uṛāhīṁ | jala biloki tinha kai parichāhīṁ ||"
+    "nisicari eka sindhu maha~ rahaī | kari māyā nabha ke khaga gahaī ||",
+    "jīva-jantu je gagana uṛāhīṃ | jala biloki tinha kai parichāhīṃ ||"
    ],
    "words": [
     [
      "निसिचरि",
-     "राक्षसी (सिंहिका)",
+     "राक्षसी",
      "demoness"
     ],
     [
-     "सिन्धु",
+     "सिंधु",
      "समुद्र",
      "ocean"
     ],
@@ -585,24 +698,29 @@
      "birds"
     ],
     [
-     "बिलोकि",
-     "देखकर",
-     "seeing / beholding"
+     "गहई",
+     "पकड़ लेती थी",
+     "used to catch"
     ],
     [
      "परिछाहीं",
-     "परछाईं / छाया",
-     "shadow / reflection"
+     "परछाईं",
+     "shadow/reflection"
     ]
    ],
-   "hi": "समुद्र में एक राक्षसी रहती थी, जो अपनी माया से आकाश के पक्षियों को पकड़ लेती थी। आकाश में जो भी जीव-जंतु उड़ते थे, जल में उनकी परछाईं देखकर वह उन्हें वश में कर लेती थी।",
-   "en": "A demoness lived in the ocean who, through sorcery, would seize birds flying in the sky. Observing the shadows of airborne creatures cast upon the water, she would ensnare them.",
-   "ctx_hi": "समुद्र लांघते समय हनुमान जी के सम्मुख सिंहिका नामक मायावी राक्षसी की बाधा आती है।",
-   "ctx_en": "Hanuman Ji encounters Sinhika, a deceptive demoness dwelling in the ocean who catches flying prey by their shadows.",
+   "hi": "समुद्र में एक राक्षसी (सिंहिका) रहती थी, जो अपनी माया से आकाश के पक्षियों को पकड़ लेती थी। आकाश में जो भी जीव-जंतु उड़ते, वह जल में उनकी परछाईं देखकर उन्हें बाँध लेती थी।",
+   "en": "A demoness lived in the ocean who, through her sorcery, would seize birds in the sky. Observing the shadows of creatures flying above reflected in the water, she would trap them.",
+   "ctx_hi": "समुद्र लांघते समय हनुमान जी के मार्ग में सिंहिका राक्षसी की बाधा आई।",
+   "ctx_en": "As Hanuman Ji crossed the ocean, the demoness Simhika presented a new obstacle.",
+   "suggested_lines": [
+    "निसिचरि एक सिंधु महँ रहई। करि माया नभ के खग गहई॥",
+    "जीव जंतु जे गगन उड़ाहीं। जल बिलोकि तिन्ह कै परिछाहीं॥"
+   ],
    "status": "draft",
    "src": {
     "page": 856,
-    "quality": 3
+    "quality": 3,
+    "num": 1
    }
   },
   {
@@ -615,39 +733,44 @@
     "सोइ छल हनूमान कहँ कीन्हा। तासु कपट कपि तुरतहि चीन्हा॥२॥"
    ],
    "tr": [
-    "gahai chām̐ha saka se na uṛāī | ehi bidhi sadā gagana-cara khāī ||",
-    "soi chala hanūmāna kaham̐ kīnhā | tāsu kapaṭa kapi turatahi cīnhā ||"
+    "gahai chā~ha saka so na uṛāī | ehi bidhi sadā gagana-cara khāī ||",
+    "soi chala hanūmāna kaha~ kīnhā | tāsu kapaṭa kapi turatahi cīnhā ||"
    ],
    "words": [
     [
-     "गहइ",
-     "पकड़ लेती है",
-     "seizes / catches"
+     "छाँह",
+     "परछाईं / छाया",
+     "shadow"
     ],
     [
      "गगन-चर",
-     "आकाश में उड़ने वाले जीव",
-     "creatures of the sky / airborne beings"
+     "आकाश में उड़ने वाले पक्षी",
+     "flying creatures"
     ],
     [
      "कपट",
      "छल / धोखा",
-     "trickery / deceit"
+     "deceit/trickery"
     ],
     [
      "चीन्हा",
      "पहचान लिया",
-     "recognized / discerned"
+     "recognized"
     ]
    ],
-   "hi": "वह उनकी छाया को पकड़ लेती थी, जिससे वे उड़ नहीं पाते थे; इस तरह वह सदा आकाशचारियों को खाया करती थी। उसने हनुमान जी के साथ भी वही छल किया, किंतु कपिश्रेष्ठ हनुमान जी ने उसका कपट तुरंत पहचान लिया।",
-   "en": "She would seize their shadow so they could not fly, and in this manner she always preyed on creatures of the sky. She attempted the same deception with Hanuman Ji, but he instantly recognized her trickery.",
-   "ctx_hi": "हनुमान जी ने अपनी तीक्ष्ण बुद्धि से राक्षसी के कपट को तुरंत भांप लिया।",
-   "ctx_en": "Endowed with sharp discernment, Hanuman Ji immediately sees through her illusion.",
+   "hi": "वह उनकी छाया को पकड़ लेती थी जिससे वे उड़ नहीं पाते थे, और इस प्रकार वह सदा आकाशचारियों को खा जाती थी। उसने वही छल हनुमान जी के साथ भी किया, परंतु कपिश्रेष्ठ ने उसके छल को तुरंत पहचान लिया।",
+   "en": "She would capture their shadows so they could not fly away, and in this manner she always devoured sky-faring creatures. She tried the same trick on Hanuman Ji, but he immediately saw through her deceit.",
+   "ctx_hi": "सुग्रीव जी द्वारा पहले से सचेत किए जाने के कारण हनुमान जी ने सिंहिका के कपट को तुरंत भाँप लिया।",
+   "ctx_en": "Forewarned by Sugriva, Hanuman Ji recognized Simhika's shadow-catching sorcery without delay.",
+   "suggested_lines": [
+    "गहइ छाँह सक सो न उड़ाई। एहि बिधि सदा गगनचर खाई॥",
+    "सोइ छल हनूमान कहँ कीन्हा। तासु कपट कपि तुरतहिं चीन्हा॥"
+   ],
    "status": "draft",
    "src": {
     "page": 856,
-    "quality": 3
+    "quality": 3,
+    "num": 2
    }
   },
   {
@@ -660,44 +783,49 @@
     "तहाँ जाइ देखी बन सोभा। गुज्जत चंञ्चरीक मधु लोभा॥३॥"
    ],
    "tr": [
-    "tāhi māri māruta-supta bīrā | baridhi pāra gayau matidhīrā ||",
-    "tahām̐ jāi dekhī bana sobhā | gujjata cañcañrīka madhu lobhā ||"
+    "tāhi māri māruta-suta bīrā | bāridhi pāra gaya-u matidhīrā ||",
+    "tahā~ jāi dekhī bana sobhā | guñjata cañcarīka madhu lobhā ||"
    ],
    "words": [
     [
      "मारुत-सुत",
-     "पवनपुत्र हनुमान जी",
-     "the son of the Wind, Hanuman"
+     "पवनपुत्र (हनुमान जी)",
+     "son of the Wind God"
     ],
     [
-     "मतिधीरा",
-     "धीर बुद्धि वाले",
-     "steadfast in intellect / wise"
-    ],
-    [
-     "बरिधि (वारिधि)",
+     "बारिधि",
      "समुद्र",
      "ocean"
     ],
     [
-     "चंञ्चरीक",
-     "भौंरे",
+     "मतिधीरा",
+     "धीर बुद्धि वाले",
+     "steadfast/wise"
+    ],
+    [
+     "चंचरीक",
+     "भँवरे",
      "black bees"
     ],
     [
-     "मधु लोभा",
-     "मकरंद (फूलों के रस) के लोभ से",
-     "in greed for floral nectar"
+     "मधु",
+     "मकरंद / फूलों का रस",
+     "nectar/honey"
     ]
    ],
-   "hi": "धीरबुद्धि वीर पवनपुत्र हनुमान जी उस राक्षसी का वध करके समुद्र के पार पहुँच गए। वहाँ जाकर उन्होंने वन की शोभा देखी, जहाँ फूलों के रस के लोभ से भौंरे गुंजार कर रहे थे।",
-   "en": "The wise and valiant son of the Wind slew the demoness and crossed over to the other shore of the ocean. Arriving there, he beheld the splendor of the forest, where bees hummed in greed for sweet floral nectar.",
-   "ctx_hi": "समुद्र की सभी बाधाओं को पार कर हनुमान जी सकुशल लंका के तट पर पहुँच जाते हैं।",
-   "ctx_en": "Having overcome every hurdle in the ocean, Hanuman Ji safely reaches the shore of Lanka.",
+   "hi": "वीर और धैर्यवान पवनपुत्र हनुमान जी ने उस राक्षसी को मारकर समुद्र पार किया। वहाँ पहुँचकर उन्होंने लंका के वन की शोभा देखी, जहाँ फूलों के रस के लोभ से भँवरे गुंजार कर रहे थे।",
+   "en": "The heroic and wise son of the Wind God slew her and crossed to the other side of the ocean. Arriving there, he beheld the beauty of the forest, where bees hummed, lured by the sweetness of floral nectar.",
+   "ctx_hi": "समुद्र पार करके हनुमान जी सकुशल लंका के तट पर पहुँच गए।",
+   "ctx_en": "Having slain the shadow-capturing demoness, Hanuman Ji safely reached the shores of Lanka.",
+   "suggested_lines": [
+    "ताहि मारि मारुतसुत बीरा। बारिधि पार गयउ मतिधीरा॥",
+    "तहाँ जाइ देखी बन सोभा। गुंजत चंचरीक मधु लोभा॥"
+   ],
    "status": "draft",
    "src": {
     "page": 856,
-    "quality": 3
+    "quality": 3,
+    "num": 3
    }
   }
  ]
