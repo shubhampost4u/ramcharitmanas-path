@@ -1,0 +1,353 @@
+<title>Ramcharitmanas Path</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&family=Mukta:wght@400;500;700&display=swap">
+<style>
+/* Layout: one reading column of verse cards grouped by scene, an inline study panel on the open verse, and a fixed player bar for path and explanation. */
+:root{
+  --bg:#F2F1F7; --surface:#FFFFFF; --ink:#1D1B3A; --muted:#5E5A7A; --line:#DEDCEB;
+  --primary:#312E81; --on-primary:#FFFFFF; --accent:#C46A00; --hl:#FCE7B5; --hl-ink:#1D1B3A;
+  --chip:#ECEAF6;
+  --f-verse:"Tiro Devanagari Hindi","Noto Serif Devanagari","Mangal",serif;
+  --f-ui:"Mukta","Noto Sans Devanagari","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#12112A; --surface:#1C1A3A; --ink:#ECEAF6; --muted:#A6A2C3; --line:#2E2B52;
+  --primary:#B4BCFB; --on-primary:#12112A; --accent:#F5A524; --hl:#4A3A12; --hl-ink:#FFF4DA; --chip:#26244A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12112A; --surface:#1C1A3A; --ink:#ECEAF6; --muted:#A6A2C3; --line:#2E2B52;
+  --primary:#B4BCFB; --on-primary:#12112A; --accent:#F5A524; --hl:#4A3A12; --hl-ink:#FFF4DA; --chip:#26244A; color-scheme:dark}
+:root[data-skin="light"]{
+  --bg:#F2F1F7; --surface:#FFFFFF; --ink:#1D1B3A; --muted:#5E5A7A; --line:#DEDCEB;
+  --primary:#312E81; --on-primary:#FFFFFF; --accent:#C46A00; --hl:#FCE7B5; --hl-ink:#1D1B3A; --chip:#ECEAF6; color-scheme:light}
+:root[data-skin="sepia"]{
+  --bg:#EFE4CB; --surface:#F8EFD9; --ink:#3B2A14; --muted:#6E5A3E; --line:#DCCBA6;
+  --primary:#7A2E0E; --on-primary:#FFF8EC; --accent:#A8530A; --hl:#F3D489; --hl-ink:#3B2A14; --chip:#EADBB8; color-scheme:light}
+:root[data-skin="dark"]{
+  --bg:#12112A; --surface:#1C1A3A; --ink:#ECEAF6; --muted:#A6A2C3; --line:#2E2B52;
+  --primary:#B4BCFB; --on-primary:#12112A; --accent:#F5A524; --hl:#4A3A12; --hl-ink:#FFF4DA; --chip:#26244A; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-ui);font-size:16px;line-height:1.6;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:0 140px}
+.wrap{max-width:760px;margin:0 auto}
+button,select,input{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+header{padding-block:28px 12px;display:grid;gap:14px}
+.brand{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand h1{font-family:var(--f-verse);font-weight:400;font-size:clamp(28px,6vw,40px);line-height:1.1;margin:0;color:var(--primary);text-wrap:balance}
+.brand .sub{color:var(--muted);font-size:14px}
+.tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.tools select,.tools input,.iconbtn{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 10px;min-height:38px}
+.tools input{flex:1 1 200px;min-width:0}
+.kands{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}
+.kand{flex:0 0 auto;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 14px;font-size:15px;white-space:nowrap}
+.kand[aria-current="true"]{background:var(--primary);color:var(--on-primary);border-color:var(--primary)}
+.kand[disabled]{opacity:.55;cursor:not-allowed}
+.kand small{font-size:11px;letter-spacing:.04em;margin-left:4px}
+.progress{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.bar{flex:1;height:6px;background:var(--chip);border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);width:0;transition:width .3s}
+
+.scene{margin-top:28px;display:grid;gap:10px}
+.scene h2{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0;font-weight:700}
+.scene h3{font-family:var(--f-verse);font-weight:400;font-size:22px;margin:0}
+.art{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:16/7;max-width:100%;background:var(--chip)}
+.art img{width:100%;height:100%;object-fit:cover;display:block}
+.art .ph{position:absolute;inset:0;display:grid;align-content:end;gap:6px;padding:14px;
+  background:radial-gradient(120% 90% at 85% 10%,color-mix(in srgb,var(--accent) 35%,transparent),transparent 60%),
+             linear-gradient(160deg,color-mix(in srgb,var(--primary) 30%,var(--chip)),var(--chip))}
+.art .ph p{margin:0;font-size:13px;color:var(--ink);max-width:60ch;line-height:1.45}
+.art .ph b{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.art .ph button{justify-self:start;border:1px solid var(--line);background:var(--surface);border-radius:6px;padding:2px 10px;font-size:13px}
+
+.verse{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;gap:6px;cursor:pointer}
+.verse.open{border-color:var(--primary);cursor:default}
+.vhead{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:12px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.vhead .tag{font-weight:700;color:var(--accent)}
+.vhead .st{font-weight:500;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:0 5px;font-size:10px}
+.vhead .bm{border:0;background:none;font-size:18px;line-height:1;color:var(--muted);padding:2px 4px}
+.vhead .bm[aria-pressed="true"]{color:var(--accent)}
+.lines{display:grid;gap:2px}
+.ln{font-family:var(--f-verse);font-size:calc(21px * var(--fs,1));line-height:1.7;border-radius:6px;padding:0 6px;margin:0 -6px;transition:background .2s}
+.ln.on{background:var(--hl);color:var(--hl-ink)}
+.tr{color:var(--muted);font-size:calc(14px * var(--fs,1));line-height:1.5}
+.study{display:grid;gap:12px;margin-top:8px;padding-top:12px;border-top:1px dashed var(--line)}
+.words{display:flex;flex-wrap:wrap;gap:6px}
+.w{background:var(--chip);border-radius:6px;padding:3px 9px;font-size:14px;border:0}
+.w strong{font-family:var(--f-verse);font-weight:400;font-size:16px;margin-right:4px}
+.w .en{display:none;color:var(--muted)}
+.w[aria-expanded="true"] .en{display:inline}
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line)}
+.tabs button{border:0;background:none;padding:6px 12px;border-bottom:2px solid transparent;color:var(--muted);font-weight:500}
+.tabs button[aria-selected="true"]{color:var(--ink);border-color:var(--accent)}
+.panel{font-size:calc(16px * var(--fs,1));max-width:65ch}
+.panel p{margin:0 0 8px}
+.panel .ctx{color:var(--muted);font-size:.93em}
+.acts{display:flex;flex-wrap:wrap;gap:8px}
+.btn{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:6px 12px;font-size:14px;font-weight:500}
+.btn.pri{background:var(--primary);color:var(--on-primary);border-color:var(--primary)}
+.note{font-size:12px;color:var(--muted)}
+
+.player{position:fixed;left:0;right:0;bottom:0;z-index:5;background:var(--surface);border-top:1px solid var(--line);
+  padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.player .in{max-width:760px;margin:0 auto;display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between}
+.player .now{font-size:13px;color:var(--muted);min-width:0;flex:1 1 160px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.player .ctrl{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.player select{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:5px 6px}
+.player label{font-size:13px;display:flex;gap:4px;align-items:center;color:var(--muted)}
+
+footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);display:grid;gap:12px}
+.upi{display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;color:var(--ink)}
+.upi code{font-size:15px;user-select:all}
+.empty{padding:30px 0;color:var(--muted);text-align:center}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(84px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:8px;font-size:14px;z-index:9;max-width:calc(100% - 32px)}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="brand">
+    <h1>रामचरितमानस पाठ</h1>
+    <span class="sub">Tulsidas · Interactive path with meaning and voice</span>
+  </div>
+  <nav class="kands" id="kands" aria-label="Kands"></nav>
+  <div class="tools">
+    <input id="q" type="search" placeholder="खोजें / Search: हनुमान, Surasa, mountain…" aria-label="Search verses">
+    <select id="skin" aria-label="Reading theme">
+      <option value="">Theme: auto</option><option value="light">Light</option><option value="sepia">Sepia</option><option value="dark">Dark</option>
+    </select>
+    <button class="iconbtn" id="fsDown" aria-label="Smaller text">अ−</button>
+    <button class="iconbtn" id="fsUp" aria-label="Larger text">अ+</button>
+    <button class="iconbtn" id="bmOnly" aria-pressed="false">★ Bookmarks</button>
+  </div>
+  <div class="progress"><span id="progTxt">0 / 0 read</span><div class="bar"><i id="progBar"></i></div><button class="iconbtn" id="resume">Resume</button></div>
+</header>
+
+<main id="list"></main>
+
+<footer>
+  <div class="upi"><span>Support this free path (UPI):</span><code id="upiId">yourname@upi</code><button class="btn" id="copyUpi">Copy</button></div>
+  <div>The original text of Shri Ramcharitmanas by Goswami Tulsidas is in the public domain. Hindi and English meanings in this app are original drafts written for this project and must be reviewed by a scholar before public release. No Gita Press translation is used.</div>
+  <div>Voice: uses your device's built-in voice now. Recorded or AI-generated audio files (Sarvam, ElevenLabs, Piper) play automatically once their paths are added to a verse.</div>
+</footer>
+</div>
+
+<div class="player" role="region" aria-label="Player">
+  <div class="in">
+    <div class="now" id="now">Tap a verse to begin</div>
+    <div class="ctrl">
+      <button class="btn" id="prev" aria-label="Previous verse">◀</button>
+      <button class="btn pri" id="recite">▶ पाठ</button>
+      <button class="btn" id="expHi">व्याख्या हिंदी</button>
+      <button class="btn" id="expEn">Explain EN</button>
+      <button class="btn" id="stop">■ Stop</button>
+      <button class="btn" id="next" aria-label="Next verse">▶</button>
+      <select id="rate" aria-label="Speed"><option value="0.7">0.7×</option><option value="0.85" selected>0.85×</option><option value="1">1×</option></select>
+      <label><input type="checkbox" id="cont"> Continuous</label>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ---------- CONFIG ---------- */
+const CONFIG = { upi: "yourname@upi" };
+
+/* ---------- DATA (Sundar Kand, opening) ----------
+   Per verse:  audio: { verse:"audio/sk-002.mp3", exp_hi:"audio/sk-002-hi.mp3", exp_en:"audio/sk-002-en.mp3" }
+               timestamps: [0, 4200]  // ms where each line starts in audio.verse (karaoke highlight)
+   Per scene:  image: "images/....webp"
+*/
+const KANDS = [
+  {id:"bal",name:"बालकाण्ड"},{id:"ayodhya",name:"अयोध्याकाण्ड"},{id:"aranya",name:"अरण्यकाण्ड"},
+  {id:"kishkindha",name:"किष्किन्धाकाण्ड"},{id:"sundar",name:"सुन्दरकाण्ड",live:true},
+  {id:"lanka",name:"लंकाकाण्ड"},{id:"uttar",name:"उत्तरकाण्ड"}
+];
+
+let SCENES = [], VERSES = [];
+
+/* ---------- STATE (per-browser, optional) ---------- */
+const store = {
+  get(k,d){try{const v=localStorage.getItem("rcm:"+k);return v?JSON.parse(v):d}catch(e){return d}},
+  set(k,v){try{localStorage.setItem("rcm:"+k,JSON.stringify(v))}catch(e){}}
+};
+let bookmarks = new Set(store.get("bm",[]));
+let readSet = new Set(store.get("read",[]));
+let openId = null, tab = "hi", fs = store.get("fs",1), bmOnly = false, query = "";
+let runToken = 0, currentAudio = null;
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function toast(msg){const t=document.createElement("div");t.className="toast";t.textContent=msg;document.body.appendChild(t);setTimeout(()=>t.remove(),2600)}
+
+/* ---------- RENDER ---------- */
+function renderKands(){
+  $("#kands").innerHTML = KANDS.map(k=>`<button class="kand" ${k.live?'aria-current="true"':'disabled'}>${k.name}${k.live?'':'<small>जल्द</small>'}</button>`).join("");
+}
+function matches(v){
+  if(bmOnly && !bookmarks.has(v.id)) return false;
+  if(!query) return true;
+  const hay=(v.lines.join(" ")+" "+v.tr.join(" ")+" "+v.hi+" "+v.en+" "+v.words.map(w=>w.join(" ")).join(" ")).toLowerCase();
+  return hay.includes(query);
+}
+function verseHTML(v){
+  const open = v.id===openId;
+  let h=`<article class="verse${open?' open':''}" id="${v.id}" tabindex="0" aria-expanded="${open}">
+    <div class="vhead"><span><span class="tag">${v.type}</span> · ${v.n}${v.status&&v.status!=="approved"?' · <span class="st">'+v.status+'</span>':''}</span>
+      <button class="bm" data-bm="${v.id}" aria-pressed="${bookmarks.has(v.id)}" aria-label="Bookmark">${bookmarks.has(v.id)?'★':'☆'}</button></div>
+    <div class="lines">${v.lines.map((l,i)=>`<div class="ln" data-ln="${i}">${esc(l)}</div>`).join("")}</div>`;
+  if(open){
+    h+=`<div class="tr">${v.tr.map(esc).join("<br>")}</div>
+    <div class="study">
+      <div class="words">${v.words.map(w=>`<button class="w" aria-expanded="false"><strong>${esc(w[0])}</strong>${esc(w[1])}<span class="en"> · ${esc(w[2])}</span></button>`).join("")}</div>
+      <div class="tabs" role="tablist">
+        <button role="tab" data-tab="hi" aria-selected="${tab==='hi'}">हिंदी अर्थ</button>
+        <button role="tab" data-tab="en" aria-selected="${tab==='en'}">English</button>
+      </div>
+      <div class="panel" role="tabpanel">${tab==='hi'
+        ? `<p>${esc(v.hi)}</p>${v.ctx_hi?`<p class="ctx">भाव: ${esc(v.ctx_hi)}</p>`:''}`
+        : `<p>${esc(v.en)}</p>${v.ctx_en?`<p class="ctx">Context: ${esc(v.ctx_en)}</p>`:''}`}</div>
+      <div class="acts">
+        <button class="btn pri" data-act="recite">▶ पाठ करें</button>
+        <button class="btn" data-act="exp-hi">व्याख्या सुनें</button>
+        <button class="btn" data-act="exp-en">Hear explanation</button>
+      </div>
+      <div class="note">Tap a word for its English gloss. Meanings are drafts pending scholar review.</div>
+    </div>`;
+  }
+  return h+`</article>`;
+}
+function sceneHTML(s){
+  const ph=`<div class="ph"${s.image?' hidden':''}><b>Illustration slot · FLUX prompt</b><p>${esc(s.prompt)}</p><button data-copy="${esc(s.prompt)}">Copy prompt</button></div>`;
+  const img=s.image?`<img src="${esc(s.image)}" alt="${esc(s.title)}" loading="lazy" onerror="this.remove();this.parentNode.querySelector('.ph').hidden=false">`:'';
+  return `<section class="scene"><h2>Scene</h2><h3>${esc(s.title)}</h3><div class="art">${img}${ph}</div>`;
+}
+function render(){
+  const vis=VERSES.filter(matches);
+  if(!vis.length){$("#list").innerHTML=`<div class="empty">${bmOnly?'No bookmarks yet. Tap ☆ on a verse to save it.':'No verse matches “'+esc(query)+'”.'}</div>`;updateProgress();return}
+  let out="",cur=null;
+  for(const v of vis){
+    if(v.scene!==cur){if(cur)out+="</section>";cur=v.scene;const sc=SCENES.find(s=>s.id===cur); out+= sc? sceneHTML(sc) : '<section class="scene">';}
+    out+=verseHTML(v);
+  }
+  $("#list").innerHTML=out+"</section>";
+  updateProgress();
+  const v=VERSES.find(x=>x.id===openId);
+  $("#now").textContent = v ? `सुन्दरकाण्ड · ${v.type} ${v.n}` : "Tap a verse to begin";
+}
+function updateProgress(){
+  $("#progTxt").textContent=`${readSet.size} / ${VERSES.length} read`;
+  $("#progBar").style.width=(readSet.size/VERSES.length*100)+"%";
+}
+function openVerse(id,scroll=true){
+  openId=id; readSet.add(id); store.set("read",[...readSet]); store.set("last",id); render();
+  if(scroll){const el=document.getElementById(id); el&&el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"center"});}
+}
+function setFs(v){fs=Math.min(1.6,Math.max(.8,v));document.documentElement.style.setProperty("--fs",fs);store.set("fs",fs)}
+
+/* ---------- VOICE ---------- */
+let voices=[];
+function loadVoices(){try{voices=speechSynthesis.getVoices()}catch(e){voices=[]}}
+if("speechSynthesis" in window){loadVoices();speechSynthesis.onvoiceschanged=loadVoices}
+function pickVoice(lang){
+  const pre=lang.slice(0,2);
+  return voices.find(v=>v.lang===lang)||voices.find(v=>v.lang&&v.lang.startsWith(pre))||null;
+}
+function clean(t){return t.replace(/[॥।]/g," ").replace(/[०-९\d]+/g,"").trim()}
+function speak(text,lang,token){
+  return new Promise(res=>{
+    if(!("speechSynthesis" in window)){toast("This browser has no speech voice.");return res(false)}
+    if(token!==runToken) return res(false);
+    const u=new SpeechSynthesisUtterance(text); u.lang=lang; u.rate=parseFloat($("#rate").value);
+    const vo=pickVoice(lang); if(vo) u.voice=vo; else if(lang.startsWith("hi")) toast("No Hindi voice found on this device; using default.");
+    u.onend=()=>res(true); u.onerror=()=>res(false);
+    speechSynthesis.speak(u);
+  });
+}
+function playFile(src,token,onTime){
+  return new Promise(res=>{
+    if(token!==runToken) return res(false);
+    const a=new Audio(src); currentAudio=a; a.playbackRate=parseFloat($("#rate").value);
+    if(onTime) a.ontimeupdate=()=>onTime(a.currentTime*1000);
+    a.onended=()=>res(true); a.onerror=()=>{toast("Audio file not found: "+src);res(false)};
+    a.play().catch(()=>res(false));
+  });
+}
+function highlight(i){document.querySelectorAll(`#${openId} .ln`).forEach((el,k)=>el.classList.toggle("on",k===i))}
+function stopAll(){runToken++;try{speechSynthesis.cancel()}catch(e){} if(currentAudio){currentAudio.pause();currentAudio=null} highlight(-1)}
+
+async function recite(){
+  if(!openId) openVerse(VERSES[0].id);
+  stopAll(); const token=runToken, v=VERSES.find(x=>x.id===openId);
+  if(v.audio&&v.audio.verse){
+    const ts=v.timestamps||[];
+    await playFile(v.audio.verse,token,ms=>{let i=0;ts.forEach((t,k)=>{if(ms>=t)i=k});highlight(ts.length?i:-1)});
+  } else {
+    for(let i=0;i<v.lines.length;i++){ if(token!==runToken) return; highlight(i); await speak(clean(v.lines[i]),"hi-IN",token); }
+  }
+  if(token!==runToken) return;
+  highlight(-1);
+  if($("#cont").checked){const idx=VERSES.findIndex(x=>x.id===openId); if(idx<VERSES.length-1){openVerse(VERSES[idx+1].id); recite();}}
+}
+async function explain(lang){
+  if(!openId) openVerse(VERSES[0].id);
+  stopAll(); const token=runToken, v=VERSES.find(x=>x.id===openId);
+  tab=lang; render();
+  const file=v.audio&&(lang==="hi"?v.audio.exp_hi:v.audio.exp_en);
+  if(file) return playFile(file,token);
+  const text= lang==="hi" ? v.hi+" "+(v.ctx_hi||"") : v.en+" "+(v.ctx_en||"");
+  await speak(text, lang==="hi"?"hi-IN":"en-IN", token);
+}
+function step(d){
+  stopAll(); const idx=VERSES.findIndex(x=>x.id===openId);
+  const n=idx<0?0:Math.min(VERSES.length-1,Math.max(0,idx+d)); openVerse(VERSES[n].id);
+}
+
+/* ---------- EVENTS ---------- */
+$("#list").addEventListener("click",e=>{
+  const bm=e.target.closest("[data-bm]");
+  if(bm){e.stopPropagation();const id=bm.dataset.bm;bookmarks.has(id)?bookmarks.delete(id):bookmarks.add(id);store.set("bm",[...bookmarks]);render();return}
+  const cp=e.target.closest("[data-copy]");
+  if(cp){copy(cp.dataset.copy,"Prompt copied");return}
+  const w=e.target.closest(".w"); if(w){w.setAttribute("aria-expanded",w.getAttribute("aria-expanded")!=="true");return}
+  const t=e.target.closest("[data-tab]"); if(t){tab=t.dataset.tab;render();return}
+  const a=e.target.closest("[data-act]");
+  if(a){const act=a.dataset.act; act==="recite"?recite():explain(act==="exp-hi"?"hi":"en");return}
+  const card=e.target.closest(".verse"); if(card&&card.id!==openId){stopAll();openVerse(card.id,false)}
+});
+$("#list").addEventListener("keydown",e=>{const c=e.target.closest(".verse");if(c&&e.target===c&&(e.key==="Enter"||e.key===" ")){e.preventDefault();openVerse(c.id,false)}});
+$("#recite").onclick=recite; $("#expHi").onclick=()=>explain("hi"); $("#expEn").onclick=()=>explain("en");
+$("#stop").onclick=stopAll; $("#prev").onclick=()=>step(-1); $("#next").onclick=()=>step(1);
+$("#q").addEventListener("input",e=>{query=e.target.value.trim().toLowerCase();render()});
+$("#bmOnly").onclick=e=>{bmOnly=!bmOnly;e.currentTarget.setAttribute("aria-pressed",bmOnly);e.currentTarget.textContent=bmOnly?"★ Showing bookmarks":"★ Bookmarks";render()};
+$("#skin").onchange=e=>{const v=e.target.value; v?document.documentElement.setAttribute("data-skin",v):document.documentElement.removeAttribute("data-skin"); store.set("skin",v)};
+$("#fsUp").onclick=()=>setFs(fs+.1); $("#fsDown").onclick=()=>setFs(fs-.1);
+$("#resume").onclick=()=>{const l=store.get("last",null); l?openVerse(l):toast("Nothing to resume yet.")};
+function copy(text,msg){
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(()=>toast(msg)).catch(()=>toast("Select and copy: "+text))}
+  else toast("Select and copy: "+text);
+}
+$("#copyUpi").onclick=()=>copy(CONFIG.upi,"UPI ID copied");
+
+/* ---------- BOOT ---------- */
+$("#upiId").textContent=CONFIG.upi;
+const sk=store.get("skin",""); if(sk){document.documentElement.setAttribute("data-skin",sk);$("#skin").value=sk}
+setFs(fs); renderKands();
+async function loadKand(id){
+  $("#list").innerHTML='<div class="empty">Loading…</div>';
+  try{
+    const r=await fetch("data/"+id+".json",{cache:"no-cache"}); if(!r.ok) throw new Error(r.status);
+    const d=await r.json(); SCENES=d.scenes||[]; VERSES=(d.verses||[]).filter(v=>v.lines&&v.lines.length);
+  }catch(e){$("#list").innerHTML='<div class="empty">Could not load data/'+id+'.json. Open this app from a web server (GitHub Pages, Netlify), not as a local file.</div>';return}
+  const last=store.get("last",null);
+  openId = VERSES.some(v=>v.id===last) ? last : (VERSES[0]&&VERSES[0].id);
+  if(openId) readSet.add(openId);
+  render();
+}
+loadKand("sundar");
+</script>

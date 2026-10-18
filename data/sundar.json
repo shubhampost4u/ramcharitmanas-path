@@ -1,0 +1,597 @@
+{
+ "kand": "sundar",
+ "name": "सुन्दरकाण्ड",
+ "source": "Text: Goswami Tulsidas (public domain). Meanings: original drafts, pending scholar review.",
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "मंगलाचरण · Invocation",
+   "image": null,
+   "prompt": "Serene Lord Rama seated, blue-complexioned, holding bow, soft golden halo, Ayodhya palace pillars, traditional Indian miniature painting style, warm saffron and indigo palette, no text"
+  },
+  {
+   "id": "s2",
+   "title": "हनुमान जी की विदा · Hanuman takes leave",
+   "image": null,
+   "prompt": "Hanuman bowing with folded hands before Jambavan, Angad and vanara army on a seashore at dawn, devotional, Rajput miniature style, soft light, no text"
+  },
+  {
+   "id": "s3",
+   "title": "समुद्र-लंघन · The great leap",
+   "image": "images/hanuman-lanka.png",
+   "prompt": "Hanuman leaping from a mountain across a vast ocean toward the golden city of Lanka, mountain sinking below, dramatic sky, Indian miniature painting style, no text"
+  },
+  {
+   "id": "s4",
+   "title": "सुरसा की परीक्षा · Surasa's test",
+   "image": null,
+   "prompt": "Giant serpent-mother Surasa rising from the ocean with open mouth, tiny Hanuman flying near her, gods watching from clouds, Pahari miniature style, no text"
+  }
+ ],
+ "verses": [
+  {
+   "id": "sk-001",
+   "scene": "s1",
+   "type": "श्लोक",
+   "n": "1",
+   "lines": [
+    "शान्तं शाश्वतमप्रमेयमनघं निर्वाणशान्तिप्रदं",
+    "ब्रह्माशम्भुफणीन्द्रसेव्यमनिशं वेदान्तवेद्यं विभुम्।",
+    "रामाख्यं जगदीश्वरं सुरगुरुं मायामनुष्यं हरिं",
+    "वन्देऽहं करुणाकरं रघुवरं भूपालचूडामणिम्॥१॥"
+   ],
+   "tr": [
+    "śāntaṁ śāśvatam aprameyam anaghaṁ nirvāṇa-śānti-pradaṁ",
+    "brahmā-śambhu-phaṇīndra-sevyam aniśaṁ vedānta-vedyaṁ vibhum",
+    "rāmākhyaṁ jagadīśvaraṁ suraguruṁ māyā-manuṣyaṁ hariṁ",
+    "vande'haṁ karuṇākaraṁ raghuvaraṁ bhūpāla-cūḍāmaṇim"
+   ],
+   "words": [
+    [
+     "शान्तं",
+     "शान्त",
+     "peaceful"
+    ],
+    [
+     "अप्रमेयम्",
+     "जिसे मापा न जा सके",
+     "immeasurable"
+    ],
+    [
+     "अनघं",
+     "पापरहित",
+     "sinless"
+    ],
+    [
+     "फणीन्द्र",
+     "शेषनाग",
+     "Shesha, king of serpents"
+    ],
+    [
+     "वेदान्तवेद्यं",
+     "वेदान्त से जानने योग्य",
+     "known through Vedanta"
+    ],
+    [
+     "करुणाकरं",
+     "करुणा की खान",
+     "source of compassion"
+    ]
+   ],
+   "hi": "तुलसीदास जी उन रघुवर श्रीराम को प्रणाम करते हैं जो शान्त हैं, सदा रहने वाले हैं, जिनका कोई माप नहीं और जिनमें कोई दोष नहीं। वे मोक्ष की शान्ति देते हैं, ब्रह्मा, शिव और शेषनाग सदा उनकी सेवा करते हैं, वेदान्त से ही उन्हें जाना जा सकता है। वे सर्वत्र व्याप्त जगत के स्वामी हैं, जिन्होंने माया से मनुष्य का रूप लिया, जो दया के सागर और राजाओं के मुकुटमणि हैं।",
+   "en": "I bow to Rama, the best of the Raghus: at peace, eternal, beyond all measure and free of fault, giver of the peace of liberation, served without pause by Brahma, Shiva and Shesha, known through Vedanta, present everywhere. He is lord of the world and teacher of the gods, Hari who appears as a man through his own power, an ocean of compassion and the crown jewel of kings.",
+   "ctx_hi": "सुन्दरकाण्ड संस्कृत मंगलाचरण से आरम्भ होता है। पाठ से पहले इष्टदेव का स्मरण करने की परम्परा यहीं से दिखती है।",
+   "ctx_en": "Sundar Kand opens with a Sanskrit invocation; the path traditionally begins by remembering the deity before the story.",
+   "status": "draft"
+  },
+  {
+   "id": "sk-002",
+   "scene": "s2",
+   "type": "चौपाई",
+   "n": "1.1",
+   "lines": [
+    "जामवंत के बचन सुहाए।",
+    "सुनि हनुमंत हृदय अति भाए॥"
+   ],
+   "tr": [
+    "jāmavanta ke bacana suhāe",
+    "suni hanumanta hṛdaya ati bhāe"
+   ],
+   "words": [
+    [
+     "जामवंत",
+     "जाम्बवान",
+     "Jambavan, the wise bear-king"
+    ],
+    [
+     "बचन",
+     "वचन, बातें",
+     "words"
+    ],
+    [
+     "सुहाए",
+     "सुन्दर, प्रिय",
+     "pleasing"
+    ],
+    [
+     "भाए",
+     "अच्छे लगे",
+     "delighted"
+    ]
+   ],
+   "hi": "जाम्बवान की सुन्दर बातें सुनकर हनुमान जी का मन बहुत प्रसन्न हुआ।",
+   "en": "Jambavan's words were pleasing, and hearing them filled Hanuman's heart with joy.",
+   "ctx_hi": "किष्किन्धाकाण्ड के अन्त में जाम्बवान ने हनुमान जी को उनका बल याद दिलाया था। वही प्रसंग यहाँ आगे बढ़ता है।",
+   "ctx_en": "At the close of Kishkindha Kand, Jambavan reminded Hanuman of his forgotten strength. The story picks up from there.",
+   "status": "draft"
+  },
+  {
+   "id": "sk-003",
+   "scene": "s2",
+   "type": "चौपाई",
+   "n": "1.2",
+   "lines": [
+    "तब लगि मोहि परिखेहु तुम्ह भाई।",
+    "सहि दुख कंद मूल फल खाई॥"
+   ],
+   "tr": [
+    "taba lagi mohi parikhehu tumha bhāī",
+    "sahi dukha kanda mūla phala khāī"
+   ],
+   "words": [
+    [
+     "तब लगि",
+     "तब तक",
+     "until then"
+    ],
+    [
+     "परिखेहु",
+     "प्रतीक्षा करना",
+     "wait for"
+    ],
+    [
+     "कंद मूल",
+     "जड़ और कन्द",
+     "roots and tubers"
+    ]
+   ],
+   "hi": "हनुमान जी बोले, भाइयो, तुम सब कष्ट सहते हुए, कन्द, मूल और फल खाकर तब तक मेरी राह देखना।",
+   "en": "Hanuman said: Brothers, bear the hardship, live on roots and fruit, and wait for me until then.",
+   "ctx_hi": "हनुमान जी साथियों के आराम की चिन्ता पहले करते हैं। यह उनके नेतृत्व का स्वभाव है।",
+   "ctx_en": "Before leaving, Hanuman thinks first of his companions' needs.",
+   "status": "draft"
+  },
+  {
+   "id": "sk-004",
+   "scene": "s2",
+   "type": "चौपाई",
+   "n": "1.3",
+   "lines": [
+    "जब लगि आवौं सीतहि देखी।",
+    "होइहि काजु मोहि हरष बिसेषी॥"
+   ],
+   "tr": [
+    "jaba lagi āvauṁ sītahi dekhī",
+    "hoihi kāju mohi haraṣa biseṣī"
+   ],
+   "words": [
+    [
+     "आवौं",
+     "लौट आऊँ",
+     "I return"
+    ],
+    [
+     "काजु",
+     "कार्य",
+     "the task"
+    ],
+    [
+     "हरष बिसेषी",
+     "विशेष आनन्द",
+     "great joy"
+    ]
+   ],
+   "hi": "जब तक मैं सीता माता के दर्शन करके न लौटूँ। काम ज़रूर पूरा होगा, क्योंकि मेरे मन में बहुत उत्साह है।",
+   "en": "Wait until I return having seen Sita. The task will surely succeed, for I feel a special joy.",
+   "ctx_hi": "मन का उत्साह शुभ संकेत माना गया है। हनुमान जी इसी विश्वास के साथ चलते हैं।",
+   "ctx_en": "A joyful heart is read as a good omen; Hanuman sets out with that confidence.",
+   "status": "draft"
+  },
+  {
+   "id": "sk-005",
+   "scene": "s2",
+   "type": "चौपाई",
+   "n": "1.4",
+   "lines": [
+    "यह कहि नाइ सबन्हि कहुँ माथा।",
+    "चलेउ हरषि हियँ धरि रघुनाथा॥"
+   ],
+   "tr": [
+    "yaha kahi nāi sabanhi kahuṁ māthā",
+    "caleu haraṣi hiyaṁ dhari raghunāthā"
+   ],
+   "words": [
+    [
+     "नाइ माथा",
+     "सिर झुकाकर",
+     "bowing the head"
+    ],
+    [
+     "हियँ",
+     "हृदय में",
+     "in the heart"
+    ],
+    [
+     "रघुनाथा",
+     "श्रीराम",
+     "Rama, lord of the Raghus"
+    ]
+   ],
+   "hi": "इतना कहकर उन्होंने सबको सिर झुकाकर प्रणाम किया और श्रीराम को हृदय में बसाकर प्रसन्न मन से चल पड़े।",
+   "en": "Saying this, he bowed his head to everyone and set out joyfully, holding Rama in his heart.",
+   "ctx_hi": "हर बड़े काम से पहले प्रणाम और प्रभु-स्मरण, यही सुन्दरकाण्ड का भाव है।",
+   "ctx_en": "Humility and remembrance of the Lord before every great act is the spirit of Sundar Kand.",
+   "status": "draft"
+  },
+  {
+   "id": "sk-006",
+   "scene": "s3",
+   "type": "चौपाई",
+   "n": "1.5",
+   "lines": [
+    "सिंधु तीर एक भूधर सुंदर।",
+    "कौतुक कूदि चढ़ेउ ता ऊपर॥"
+   ],
+   "tr": [
+    "sindhu tīra eka bhūdhara sundara",
+    "kautuka kūdi caṛheu tā ūpara"
+   ],
+   "words": [
+    [
+     "सिंधु तीर",
+     "समुद्र का किनारा",
+     "seashore"
+    ],
+    [
+     "भूधर",
+     "पर्वत",
+     "mountain"
+    ],
+    [
+     "कौतुक",
+     "खेल-खेल में",
+     "playfully"
+    ]
+   ],
+   "hi": "समुद्र के किनारे एक सुन्दर पर्वत था। हनुमान जी खेल की तरह कूदकर उसकी चोटी पर चढ़ गए।",
+   "en": "On the seashore stood a beautiful mountain, and Hanuman leapt onto it as if in play.",
+   "ctx_hi": "जो काम दूसरों को असम्भव लगता है, वह हनुमान जी के लिए खेल जैसा है।",
+   "ctx_en": "What seems impossible to others is play for Hanuman.",
+   "status": "draft"
+  },
+  {
+   "id": "sk-007",
+   "scene": "s3",
+   "type": "चौपाई",
+   "n": "1.6",
+   "lines": [
+    "बार बार रघुबीर सँभारी।",
+    "तरकेउ पवनतनय बल भारी॥"
+   ],
+   "tr": [
+    "bāra bāra raghubīra saṁbhārī",
+    "tarakeu pavanatanaya bala bhārī"
+   ],
+   "words": [
+    [
+     "सँभारी",
+     "स्मरण करके",
+     "remembering"
+    ],
+    [
+     "तरकेउ",
+     "उछले",
+     "sprang"
+    ],
+    [
+     "पवनतनय",
+     "पवन के पुत्र",
+     "son of the Wind"
+    ]
+   ],
+   "hi": "बार-बार श्रीराम का स्मरण करके महाबली पवनपुत्र पूरे वेग से उछले।",
+   "en": "Remembering Rama again and again, the mighty son of the Wind sprang up with tremendous force.",
+   "ctx_hi": "बल हनुमान जी का अपना है, पर उसका आधार राम-नाम का स्मरण है।",
+   "ctx_en": "The strength is Hanuman's own, but it rests on remembering Rama.",
+   "status": "draft"
+  },
+  {
+   "id": "sk-008",
+   "scene": "s3",
+   "type": "चौपाई",
+   "n": "1.7",
+   "lines": [
+    "जेहिं गिरि चरन देइ हनुमंता।",
+    "चलेउ सो गा पाताल तुरंता॥"
+   ],
+   "tr": [
+    "jehiṁ giri carana dei hanumantā",
+    "caleu so gā pātāla turantā"
+   ],
+   "words": [
+    [
+     "गिरि",
+     "पर्वत",
+     "mountain"
+    ],
+    [
+     "चरन देइ",
+     "पैर टिकाकर",
+     "pressing his feet"
+    ],
+    [
+     "पाताल",
+     "धरती के नीचे का लोक",
+     "the netherworld"
+    ]
+   ],
+   "hi": "जिस पर्वत पर पैर जमाकर हनुमान जी उछले, वह उसी क्षण पाताल में धँस गया।",
+   "en": "The mountain he pushed off from sank at once into the netherworld.",
+   "ctx_hi": "यह उनकी छलाँग की शक्ति का चित्र है।",
+   "ctx_en": "An image of the sheer power of the leap.",
+   "status": "draft"
+  },
+  {
+   "id": "sk-009",
+   "scene": "s3",
+   "type": "चौपाई",
+   "n": "1.8",
+   "lines": [
+    "जिमि अमोघ रघुपति कर बाना।",
+    "एही भाँति चलेउ हनुमाना॥"
+   ],
+   "tr": [
+    "jimi amogha raghupati kara bānā",
+    "ehī bhāṁti caleu hanumānā"
+   ],
+   "words": [
+    [
+     "जिमि",
+     "जैसे",
+     "just as"
+    ],
+    [
+     "अमोघ",
+     "कभी न चूकने वाला",
+     "unfailing"
+    ],
+    [
+     "बाना",
+     "बाण",
+     "arrow"
+    ]
+   ],
+   "hi": "जैसे श्रीराम का बाण कभी लक्ष्य नहीं चूकता, वैसे ही हनुमान जी सीधे लंका की ओर चले।",
+   "en": "Like Rama's arrow that never misses its mark, Hanuman flew straight toward his goal.",
+   "ctx_hi": "तुलसीदास हनुमान जी को राम के बाण से उपमा देते हैं: वे स्वयं राम की इच्छा बनकर चलते हैं।",
+   "ctx_en": "Tulsidas likens Hanuman to Rama's own arrow: he travels as the will of Rama.",
+   "status": "draft"
+  },
+  {
+   "id": "sk-010",
+   "scene": "s3",
+   "type": "चौपाई",
+   "n": "1.9",
+   "lines": [
+    "जलनिधि रघुपति दूत बिचारी।",
+    "तैं मैनाक होहि श्रम हारी॥"
+   ],
+   "tr": [
+    "jalanidhi raghupati dūta bicārī",
+    "taiṁ maināka hohi śrama hārī"
+   ],
+   "words": [
+    [
+     "जलनिधि",
+     "समुद्र",
+     "the Ocean"
+    ],
+    [
+     "दूत",
+     "संदेशवाहक",
+     "messenger"
+    ],
+    [
+     "श्रम हारी",
+     "थकान मिटाने वाला",
+     "remover of fatigue"
+    ]
+   ],
+   "hi": "समुद्र ने समझा कि ये श्रीराम के दूत हैं, तो उसने मैनाक पर्वत से कहा, तुम ऊपर उठकर इन्हें विश्राम दो।",
+   "en": "The Ocean, knowing him to be Rama's messenger, told Mount Mainak to rise and give him rest.",
+   "ctx_hi": "प्रकृति भी राम के काम में सहायक बनना चाहती है।",
+   "ctx_en": "Even nature wants to help in Rama's work.",
+   "status": "draft"
+  },
+  {
+   "id": "sk-011",
+   "scene": "s3",
+   "type": "दोहा",
+   "n": "1",
+   "lines": [
+    "हनूमान तेहि परसा कर पुनि कीन्ह प्रनाम।",
+    "राम काजु कीन्हें बिनु मोहि कहाँ बिश्राम॥१॥"
+   ],
+   "tr": [
+    "hanūmāna tehi parasā kara puni kīnha pranāma",
+    "rāma kāju kīnheṁ binu mohi kahāṁ biśrāma"
+   ],
+   "words": [
+    [
+     "परसा",
+     "छुआ",
+     "touched"
+    ],
+    [
+     "कर",
+     "हाथ",
+     "hand"
+    ],
+    [
+     "बिश्राम",
+     "आराम",
+     "rest"
+    ]
+   ],
+   "hi": "हनुमान जी ने मैनाक को हाथ से छुआ, प्रणाम किया और कहा, राम जी का काम पूरा किए बिना मेरे लिए आराम कहाँ।",
+   "en": "Hanuman touched Mainak with his hand, bowed to him and said: until Rama's work is done, there is no rest for me.",
+   "ctx_hi": "यह दोहा सुन्दरकाण्ड का मूल मन्त्र माना जाता है: कर्तव्य पहले, विश्राम बाद में।",
+   "ctx_en": "Often quoted as the motto of Sundar Kand: duty first, rest later.",
+   "status": "draft"
+  },
+  {
+   "id": "sk-012",
+   "scene": "s4",
+   "type": "चौपाई",
+   "n": "2.1",
+   "lines": [
+    "जात पवनसुत देवन्ह देखा।",
+    "जानैं कहुँ बल बुद्धि बिसेषा॥"
+   ],
+   "tr": [
+    "jāta pavanasuta devanha dekhā",
+    "jānaiṁ kahuṁ bala buddhi biseṣā"
+   ],
+   "words": [
+    [
+     "जात",
+     "जाते हुए",
+     "going"
+    ],
+    [
+     "देवन्ह",
+     "देवताओं ने",
+     "the gods"
+    ],
+    [
+     "बल बुद्धि",
+     "शक्ति और समझ",
+     "strength and wisdom"
+    ]
+   ],
+   "hi": "देवताओं ने पवनपुत्र को जाते देखा और उनकी शक्ति और बुद्धि को परखने का विचार किया।",
+   "en": "The gods watched the Wind's son on his way and decided to test his strength and wisdom.",
+   "ctx_hi": "हर बड़ी यात्रा में परीक्षा आती है।",
+   "ctx_en": "Every great journey brings its tests.",
+   "status": "draft"
+  },
+  {
+   "id": "sk-013",
+   "scene": "s4",
+   "type": "चौपाई",
+   "n": "2.2",
+   "lines": [
+    "सुरसा नाम अहिन्ह कै माता।",
+    "पठइन्हि आइ कही तेहिं बाता॥"
+   ],
+   "tr": [
+    "surasā nāma ahinha kai mātā",
+    "paṭhainhi āi kahī tehiṁ bātā"
+   ],
+   "words": [
+    [
+     "सुरसा",
+     "सर्पों की माता",
+     "Surasa"
+    ],
+    [
+     "अहिन्ह",
+     "सर्पों की",
+     "of serpents"
+    ],
+    [
+     "पठइन्हि",
+     "भेजा",
+     "sent"
+    ]
+   ],
+   "hi": "उन्होंने सर्पों की माता सुरसा को भेजा। उसने आकर हनुमान जी से यह बात कही।",
+   "en": "They sent Surasa, mother of serpents, who came before Hanuman and spoke.",
+   "ctx_hi": "सुरसा शत्रु नहीं, परीक्षक है।",
+   "ctx_en": "Surasa is an examiner, not an enemy.",
+   "status": "draft"
+  },
+  {
+   "id": "sk-014",
+   "scene": "s4",
+   "type": "चौपाई",
+   "n": "2.3",
+   "lines": [
+    "आजु सुरन्ह मोहि दीन्ह अहारा।",
+    "सुनत बचन कह पवनकुमारा॥"
+   ],
+   "tr": [
+    "āju suranha mohi dīnha ahārā",
+    "sunata bacana kaha pavanakumārā"
+   ],
+   "words": [
+    [
+     "आजु",
+     "आज",
+     "today"
+    ],
+    [
+     "सुरन्ह",
+     "देवताओं ने",
+     "the gods"
+    ],
+    [
+     "अहारा",
+     "भोजन",
+     "food, a meal"
+    ]
+   ],
+   "hi": "सुरसा बोली, आज देवताओं ने मुझे भोजन भेजा है। यह सुनकर पवनकुमार ने उत्तर दिया।",
+   "en": "Surasa said: today the gods have sent me my meal. Hearing this, the Wind's son replied.",
+   "ctx_hi": "",
+   "ctx_en": "",
+   "status": "draft"
+  },
+  {
+   "id": "sk-015",
+   "scene": "s4",
+   "type": "चौपाई",
+   "n": "2.4",
+   "lines": [
+    "राम काजु करि फिरि मैं आवौं।",
+    "सीता कइ सुधि प्रभुहि सुनावौं॥"
+   ],
+   "tr": [
+    "rāma kāju kari phiri maiṁ āvauṁ",
+    "sītā kai sudhi prabhuhi sunāvauṁ"
+   ],
+   "words": [
+    [
+     "फिरि",
+     "लौटकर",
+     "coming back"
+    ],
+    [
+     "सुधि",
+     "समाचार",
+     "news"
+    ],
+    [
+     "प्रभुहि",
+     "प्रभु को",
+     "to the Lord"
+    ]
+   ],
+   "hi": "हनुमान जी बोले, पहले राम जी का काम करके लौट आऊँ और सीता माता का समाचार प्रभु को सुना दूँ।",
+   "en": "Hanuman said: let me first finish Rama's work, return, and give the Lord news of Sita.",
+   "ctx_hi": "हनुमान जी विनम्रता से समय माँगते हैं, अहंकार से टकराते नहीं।",
+   "ctx_en": "Hanuman answers with courtesy, asking for time instead of picking a fight.",
+   "status": "draft"
+  }
+ ]
+}
