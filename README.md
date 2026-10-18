@@ -39,6 +39,10 @@ The n8n workflow **Ramcharitmanas: translate and save to GitHub** reads a Kand f
 
 Gaps: a few scan pages have no proofread text on Wikisource. They are listed in `source/<kand>.json → gaps` with the verses on either side; those verses must be added by hand.
 
+## Verse audio
+
+The n8n workflow **Ramcharitmanas: voice verses (Sarvam)** voices every verse line by line with Sarvam Bulbul v4 Flash (`mani_hi_devotional`, pace 0.85), joins the lines into `audio/<kand>/<id>.mp3` and records each line's start time in `data/<kand>.audio.json`. The app plays these files and highlights the line being recited; explanations use the device voice. Run it in chunks (Settings → testLimit, e.g. 60): each run skips verses already voiced. If a verse's text is corrected, delete its mp3 and its entry in the audio manifest, then run again.
+
 ## Review mode
 
 Open the app with `#review` at the end of the URL. Each verse then shows its id, status, a link to its Wikisource scan page and any text correction Gemini suggested (`suggested_lines`). Corrections are never applied automatically.

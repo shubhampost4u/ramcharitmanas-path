@@ -290,12 +290,12 @@ function speak(text,lang,token){
     speechSynthesis.speak(u);
   });
 }
-function playFile(src,token,onTime){
+function playFile(src,token,onTime,quiet){
   return new Promise(res=>{
     if(token!==runToken) return res(false);
-    const a=new Audio(src); currentAudio=a; a.playbackRate=parseFloat($("#rate").value);
+    const a=new Audio(src); currentAudio=a; a.playbackRate=parseFloat($("#rate").value)/0.85;
     if(onTime) a.ontimeupdate=()=>onTime(a.currentTime*1000);
-    a.onended=()=>res(true); a.onerror=()=>{toast("Audio file not found: "+src);res(false)};
+    a.onended=()=>res(true); a.onerror=()=>{if(!quiet)toast("Audio file not found: "+src);res(false)};
     a.play().catch(()=>res(false));
   });
 }
@@ -305,10 +305,12 @@ function stopAll(){runToken++;try{speechSynthesis.cancel()}catch(e){} if(current
 async function recite(){
   if(!openId) openVerse(VERSES[0].id);
   stopAll(); const token=runToken, v=VERSES.find(x=>x.id===openId);
+  let played=false;
   if(v.audio&&v.audio.verse){
     const ts=v.timestamps||[];
-    await playFile(v.audio.verse,token,ms=>{let i=0;ts.forEach((t,k)=>{if(ms>=t)i=k});highlight(ts.length?i:-1)});
-  } else {
+    played=await playFile(v.audio.verse,token,ms=>{let i=0;ts.forEach((t,k)=>{if(ms>=t)i=k});highlight(ts.length?i:-1)},true);
+  }
+  if(!played && token===runToken){
     for(let i=0;i<v.lines.length;i++){ if(token!==runToken) return; highlight(i); await speak(clean(v.lines[i]),"hi-IN",token); }
   }
   if(token!==runToken) return;
