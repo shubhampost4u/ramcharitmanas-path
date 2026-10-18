@@ -1,3 +1,8 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ramcharitmanas Path</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="manifest" href="manifest.webmanifest">
@@ -65,7 +70,7 @@ header{padding-block:28px 12px;display:grid;gap:14px}
 .art .ph{position:absolute;inset:0;display:grid;align-content:end;gap:6px;padding:14px;
   background:radial-gradient(120% 90% at 85% 10%,color-mix(in srgb,var(--accent) 35%,transparent),transparent 60%),
              linear-gradient(160deg,color-mix(in srgb,var(--primary) 30%,var(--chip)),var(--chip))}
-.art .ph p{margin:0;font-size:13px;color:var(--ink);max-width:60ch;line-height:1.45}
+.art .ph p{margin:0;overflow:hidden;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;font-size:13px;color:var(--ink);max-width:60ch;line-height:1.45}
 .art .ph b{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .art .ph button{justify-self:start;border:1px solid var(--line);background:var(--surface);border-radius:6px;padding:2px 10px;font-size:13px}
 
@@ -115,7 +120,8 @@ footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);font-si
 .toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(84px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:8px;font-size:14px;z-index:9;max-width:calc(100% - 32px)}
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
 </style>
-
+</head>
+<body>
 <div class="wrap">
 <header>
   <div class="brand">
@@ -238,8 +244,8 @@ function reviewHTML(v){
     ${v.suggested_lines?`<div>Possible text correction:</div>${v.suggested_lines.map(l=>`<div class="sug">${esc(l)}</div>`).join('')}`:''}</div>`;
 }
 function sceneHTML(s){
-  const ph=`<div class="ph"${s.image?' hidden':''}><b>Illustration slot · FLUX prompt</b><p>${esc(s.prompt)}</p><button data-copy="${esc(s.prompt)}">Copy prompt</button></div>`;
-  const img=s.image?`<img src="${esc(s.image)}" alt="${esc(s.title)}" loading="lazy" onerror="this.remove();this.parentNode.querySelector('.ph').hidden=false">`:'';
+  const ph=`<div class="ph"${s.image?' hidden':''}><b>Illustration slot · FLUX prompt</b><p>${esc(s.prompt)}</p><button data-copy="${esc(s.full||s.prompt)}">Copy full prompt</button></div>`;
+  const img=s.image?`<img src="${esc(s.image)}" alt="${esc(s.title)}" loading="lazy" onerror="this.parentNode.querySelector('.ph').hidden=false;this.remove()">`:'';
   return `<section class="scene"><h2>Scene</h2><h3>${esc(s.title)}</h3><div class="art">${img}${ph}</div>`;
 }
 function render(){
@@ -369,7 +375,7 @@ async function loadKand(id){
     }catch(e){}
     try{
       const sr=await fetch("data/"+id+".scenes.json",{cache:"no-cache"});
-      if(sr.ok){const sd=await sr.json(); SCENES=(sd.scenes||[]).map(x=>({...x,prompt:x.prompt+(sd.style?", "+sd.style:"")}));
+      if(sr.ok){const sd=await sr.json(); SCENES=(sd.scenes||[]).map(x=>({...x,full:x.prompt+(sd.style?", "+sd.style:"")}));
         const sorted=[...SCENES].sort((a,b)=>a.from-b.from);
         VERSES.forEach(v=>{const g=v.type==="श्लोक"?0:parseInt(v.n,10)||0; let sc=sorted[0]; for(const x of sorted){if(x.from<=g)sc=x}; if(sc)v.scene=sc.id});}
     }catch(e){}
@@ -384,3 +390,6 @@ if("serviceWorker" in navigator && location.protocol==="https:" && !/claude/.tes
   navigator.serviceWorker.register("sw.js").catch(()=>{});
 }
 </script>
+
+</body>
+</html>
