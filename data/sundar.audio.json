@@ -3,7 +3,7 @@
  "model": "bulbul:v4-flash",
  "speaker": "mani_hi_devotional",
  "pace": 0.85,
- "updated": "2026-10-18T13:46:53.096Z",
+ "updated": "2026-10-18T13:52:23.192Z",
  "verses": {
   "sk-001": {
    "file": "audio/sundar/sk-001.mp3",
@@ -2272,6 +2272,484 @@
     5592
    ],
    "duration": 10632
+  },
+  "sk-285": {
+   "file": "audio/sundar/sk-285.mp3",
+   "timestamps": [
+    0,
+    6456
+   ],
+   "duration": 12624
+  },
+  "sk-286": {
+   "file": "audio/sundar/sk-286.mp3",
+   "timestamps": [
+    0,
+    6720
+   ],
+   "duration": 13080
+  },
+  "sk-287": {
+   "file": "audio/sundar/sk-287.mp3",
+   "timestamps": [
+    0,
+    6552
+   ],
+   "duration": 12624
+  },
+  "sk-288": {
+   "file": "audio/sundar/sk-288.mp3",
+   "timestamps": [
+    0,
+    5328
+   ],
+   "duration": 10848
+  },
+  "sk-289": {
+   "file": "audio/sundar/sk-289.mp3",
+   "timestamps": [
+    0,
+    4848
+   ],
+   "duration": 9984
+  },
+  "sk-290": {
+   "file": "audio/sundar/sk-290.mp3",
+   "timestamps": [
+    0,
+    7584
+   ],
+   "duration": 14304
+  },
+  "sk-291": {
+   "file": "audio/sundar/sk-291.mp3",
+   "timestamps": [
+    0,
+    6168
+   ],
+   "duration": 12528
+  },
+  "sk-292": {
+   "file": "audio/sundar/sk-292.mp3",
+   "timestamps": [
+    0,
+    5496
+   ],
+   "duration": 12312
+  },
+  "sk-293": {
+   "file": "audio/sundar/sk-293.mp3",
+   "timestamps": [
+    0,
+    7200
+   ],
+   "duration": 13920
+  },
+  "sk-294": {
+   "file": "audio/sundar/sk-294.mp3",
+   "timestamps": [
+    0,
+    6264
+   ],
+   "duration": 11208
+  },
+  "sk-295": {
+   "file": "audio/sundar/sk-295.mp3",
+   "timestamps": [
+    0,
+    5688
+   ],
+   "duration": 11760
+  },
+  "sk-296": {
+   "file": "audio/sundar/sk-296.mp3",
+   "timestamps": [
+    0,
+    5688
+   ],
+   "duration": 11952
+  },
+  "sk-297": {
+   "file": "audio/sundar/sk-297.mp3",
+   "timestamps": [
+    0,
+    8136
+   ],
+   "duration": 14304
+  },
+  "sk-298": {
+   "file": "audio/sundar/sk-298.mp3",
+   "timestamps": [
+    0,
+    7008
+   ],
+   "duration": 13920
+  },
+  "sk-299": {
+   "file": "audio/sundar/sk-299.mp3",
+   "timestamps": [
+    0,
+    5520
+   ],
+   "duration": 11688
+  },
+  "sk-300": {
+   "file": "audio/sundar/sk-300.mp3",
+   "timestamps": [
+    0,
+    5976
+   ],
+   "duration": 12336
+  },
+  "sk-301": {
+   "file": "audio/sundar/sk-301.mp3",
+   "timestamps": [
+    0,
+    5880
+   ],
+   "duration": 11952
+  },
+  "sk-302": {
+   "file": "audio/sundar/sk-302.mp3",
+   "timestamps": [
+    0,
+    6264
+   ],
+   "duration": 11784
+  },
+  "sk-303": {
+   "file": "audio/sundar/sk-303.mp3",
+   "timestamps": [
+    0,
+    7296
+   ],
+   "duration": 13632
+  },
+  "sk-304": {
+   "file": "audio/sundar/sk-304.mp3",
+   "timestamps": [
+    0,
+    5784
+   ],
+   "duration": 11280
+  },
+  "sk-305": {
+   "file": "audio/sundar/sk-305.mp3",
+   "timestamps": [
+    0,
+    6648
+   ],
+   "duration": 13272
+  },
+  "sk-306": {
+   "file": "audio/sundar/sk-306.mp3",
+   "timestamps": [
+    0,
+    7584
+   ],
+   "duration": 14976
+  },
+  "sk-307": {
+   "file": "audio/sundar/sk-307.mp3",
+   "timestamps": [
+    0,
+    5880
+   ],
+   "duration": 13560
+  },
+  "sk-308": {
+   "file": "audio/sundar/sk-308.mp3",
+   "timestamps": [
+    0,
+    6072
+   ],
+   "duration": 13272
+  },
+  "sk-309": {
+   "file": "audio/sundar/sk-309.mp3",
+   "timestamps": [
+    0,
+    5208
+   ],
+   "duration": 10152
+  },
+  "sk-310": {
+   "file": "audio/sundar/sk-310.mp3",
+   "timestamps": [
+    0,
+    6912
+   ],
+   "duration": 14952
+  },
+  "sk-311": {
+   "file": "audio/sundar/sk-311.mp3",
+   "timestamps": [
+    0,
+    6360
+   ],
+   "duration": 14304
+  },
+  "sk-312": {
+   "file": "audio/sundar/sk-312.mp3",
+   "timestamps": [
+    0,
+    6936
+   ],
+   "duration": 13680
+  },
+  "sk-313": {
+   "file": "audio/sundar/sk-313.mp3",
+   "timestamps": [
+    0,
+    5784
+   ],
+   "duration": 12432
+  },
+  "sk-314": {
+   "file": "audio/sundar/sk-314.mp3",
+   "timestamps": [
+    0,
+    6840
+   ],
+   "duration": 14424
+  },
+  "sk-315": {
+   "file": "audio/sundar/sk-315.mp3",
+   "timestamps": [
+    0,
+    5400
+   ],
+   "duration": 10152
+  },
+  "sk-316": {
+   "file": "audio/sundar/sk-316.mp3",
+   "timestamps": [
+    0,
+    5592
+   ],
+   "duration": 10536
+  },
+  "sk-317": {
+   "file": "audio/sundar/sk-317.mp3",
+   "timestamps": [
+    0,
+    5688
+   ],
+   "duration": 11568
+  },
+  "sk-318": {
+   "file": "audio/sundar/sk-318.mp3",
+   "timestamps": [
+    0,
+    6528
+   ],
+   "duration": 14016
+  },
+  "sk-319": {
+   "file": "audio/sundar/sk-319.mp3",
+   "timestamps": [
+    0,
+    6624
+   ],
+   "duration": 13344
+  },
+  "sk-320": {
+   "file": "audio/sundar/sk-320.mp3",
+   "timestamps": [
+    0,
+    5688
+   ],
+   "duration": 12888
+  },
+  "sk-321": {
+   "file": "audio/sundar/sk-321.mp3",
+   "timestamps": [
+    0,
+    5400
+   ],
+   "duration": 11280
+  },
+  "sk-322": {
+   "file": "audio/sundar/sk-322.mp3",
+   "timestamps": [
+    0,
+    6744
+   ],
+   "duration": 12720
+  },
+  "sk-323": {
+   "file": "audio/sundar/sk-323.mp3",
+   "timestamps": [
+    0,
+    4944
+   ],
+   "duration": 10152
+  },
+  "sk-324": {
+   "file": "audio/sundar/sk-324.mp3",
+   "timestamps": [
+    0,
+    6360
+   ],
+   "duration": 13848
+  },
+  "sk-325": {
+   "file": "audio/sundar/sk-325.mp3",
+   "timestamps": [
+    0,
+    7104
+   ],
+   "duration": 12696
+  },
+  "sk-326": {
+   "file": "audio/sundar/sk-326.mp3",
+   "timestamps": [
+    0,
+    6360
+   ],
+   "duration": 14136
+  },
+  "sk-327": {
+   "file": "audio/sundar/sk-327.mp3",
+   "timestamps": [
+    0,
+    9264
+   ],
+   "duration": 15336
+  },
+  "sk-328": {
+   "file": "audio/sundar/sk-328.mp3",
+   "timestamps": [
+    0,
+    5424
+   ],
+   "duration": 10368
+  },
+  "sk-329": {
+   "file": "audio/sundar/sk-329.mp3",
+   "timestamps": [
+    0,
+    6912
+   ],
+   "duration": 14304
+  },
+  "sk-330": {
+   "file": "audio/sundar/sk-330.mp3",
+   "timestamps": [
+    0,
+    6912
+   ],
+   "duration": 13632
+  },
+  "sk-331": {
+   "file": "audio/sundar/sk-331.mp3",
+   "timestamps": [
+    0,
+    7008
+   ],
+   "duration": 14688
+  },
+  "sk-332": {
+   "file": "audio/sundar/sk-332.mp3",
+   "timestamps": [
+    0,
+    6264
+   ],
+   "duration": 13944
+  },
+  "sk-333": {
+   "file": "audio/sundar/sk-333.mp3",
+   "timestamps": [
+    0,
+    4560
+   ],
+   "duration": 10536
+  },
+  "sk-334": {
+   "file": "audio/sundar/sk-334.mp3",
+   "timestamps": [
+    0,
+    7584
+   ],
+   "duration": 13656
+  },
+  "sk-335": {
+   "file": "audio/sundar/sk-335.mp3",
+   "timestamps": [
+    0,
+    6648
+   ],
+   "duration": 14112
+  },
+  "sk-336": {
+   "file": "audio/sundar/sk-336.mp3",
+   "timestamps": [
+    0,
+    6744
+   ],
+   "duration": 12816
+  },
+  "sk-337": {
+   "file": "audio/sundar/sk-337.mp3",
+   "timestamps": [
+    0,
+    6816
+   ],
+   "duration": 12888
+  },
+  "sk-338": {
+   "file": "audio/sundar/sk-338.mp3",
+   "timestamps": [
+    0,
+    5976,
+    12504,
+    19416
+   ],
+   "duration": 26328
+  },
+  "sk-339": {
+   "file": "audio/sundar/sk-339.mp3",
+   "timestamps": [
+    0,
+    5136
+   ],
+   "duration": 10272
+  },
+  "sk-340": {
+   "file": "audio/sundar/sk-340.mp3",
+   "timestamps": [
+    0,
+    6264,
+    10728
+   ],
+   "duration": 12192
+  },
+  "sk-p01": {
+   "file": "audio/sundar/sk-p01.mp3",
+   "timestamps": [
+    0,
+    8136,
+    14784,
+    21312
+   ],
+   "duration": 28128
+  },
+  "sk-p02": {
+   "file": "audio/sundar/sk-p02.mp3",
+   "timestamps": [
+    0,
+    4464,
+    8544,
+    13776
+   ],
+   "duration": 18624
+  },
+  "sk-p03": {
+   "file": "audio/sundar/sk-p03.mp3",
+   "timestamps": [
+    0
+   ],
+   "duration": 6624
   }
  }
 }
