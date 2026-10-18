@@ -1,8 +1,8 @@
 // Offline support: app shell cached on install; data refreshed from network when online;
 // images and audio cached the first time they are played or shown.
-const VERSION = 'rcm-v2';
+const VERSION = 'rcm-v3';
 const SHELL = ['./', 'index.html', 'manifest.webmanifest', 'icon.svg', 'icon-192.png', 'icon-512.png',
-  'data/sundar.json', 'data/sundar.scenes.json', 'data/sundar.patch.json'];
+  'data/sundar.json', 'data/sundar.scenes.json', 'data/sundar.patch.json', 'data/sundar.audio.json'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
