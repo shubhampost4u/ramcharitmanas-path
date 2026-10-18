@@ -1,0 +1,42 @@
+{
+ "kand": "sundar",
+ "note": "Manual fixes applied by the app on top of data/sundar.json, so re-running the n8n workflow does not lose them. Pages 850 (not proofread) and 854 (verse missing from the transcription) on Hindi Wikisource.",
+ "insert": [
+  {"after": null, "verse": {
+   "id": "sk-p01", "type": "श्लोक", "n": "1", "status": "draft",
+   "lines": ["शान्तं शाश्वतमप्रमेयमनघं निर्वाणशान्तिप्रदं", "ब्रह्माशम्भुफणीन्द्रसेव्यमनिशं वेदान्तवेद्यं विभुम्।", "रामाख्यं जगदीश्वरं सुरगुरुं मायामनुष्यं हरिं", "वन्देऽहं करुणाकरं रघुवरं भूपालचूडामणिम्॥१॥"],
+   "tr": ["śāntaṃ śāśvatam aprameyam anaghaṃ nirvāṇa-śānti-pradaṃ", "brahmā-śambhu-phaṇīndra-sevyam aniśaṃ vedānta-vedyaṃ vibhum |", "rāmākhyaṃ jagadīśvaraṃ suraguruṃ māyā-manuṣyaṃ hariṃ", "vande'haṃ karuṇākaraṃ raghuvaraṃ bhūpāla-cūḍāmaṇim ||"],
+   "words": [["अप्रमेयम्", "जिसे मापा न जा सके", "immeasurable"], ["अनघं", "पापरहित", "sinless"], ["फणीन्द्र", "शेषनाग", "Shesha, king of serpents"], ["वेदान्तवेद्यं", "वेदान्त से जानने योग्य", "known through Vedanta"], ["भूपालचूडामणिम्", "राजाओं के मुकुटमणि", "crown jewel of kings"]],
+   "hi": "जो शान्त हैं, सनातन हैं, जिनका कोई माप नहीं और जिनमें कोई दोष नहीं, जो मोक्ष की शान्ति देते हैं, ब्रह्मा, शिव और शेषनाग जिनकी सदा सेवा करते हैं और जिन्हें वेदान्त से जाना जाता है, उन जगदीश्वर, देवताओं के गुरु, माया से मनुष्य रूप धारण करने वाले हरि, करुणा के सागर, राजाओं के मुकुटमणि रघुवर श्रीराम को मैं प्रणाम करता हूँ।",
+   "en": "I bow to Rama, best of the Raghus: at peace, eternal, beyond measure and free of fault, giver of the peace of liberation, ever served by Brahma, Shiva and Shesha, known through Vedanta, lord of the world and teacher of the gods, Hari who appears as a man through his own power, ocean of compassion and crown jewel of kings.",
+   "ctx_hi": "सुन्दरकाण्ड संस्कृत मंगलाचरण से आरम्भ होता है।",
+   "ctx_en": "Sundar Kand opens with a Sanskrit invocation to Rama.",
+   "src": {"page": 850, "quality": 1}
+  }},
+  {"after": "sk-p01", "verse": {
+   "id": "sk-p02", "type": "श्लोक", "n": "2", "status": "draft",
+   "lines": ["नान्या स्पृहा रघुपते हृदयेऽस्मदीये", "सत्यं वदामि च भवानखिलान्तरात्मा।", "भक्तिं प्रयच्छ रघुपुङ्गव निर्भरां मे", "कामादिदोषरहितं कुरु मानसं च॥२॥"],
+   "tr": ["nānyā spṛhā raghupate hṛdaye'smadīye", "satyaṃ vadāmi ca bhavān akhilāntarātmā |", "bhaktiṃ prayaccha raghupuṅgava nirbharāṃ me", "kāmādi-doṣa-rahitaṃ kuru mānasaṃ ca ||"],
+   "words": [["स्पृहा", "इच्छा", "desire"], ["अखिलान्तरात्मा", "सबके अन्तर्यामी", "the inner self of all"], ["निर्भरां", "पूर्ण", "complete, full"], ["कामादिदोष", "काम, क्रोध आदि दोष", "faults such as desire and anger"]],
+   "hi": "हे रघुनाथ जी, मेरे हृदय में कोई दूसरी इच्छा नहीं है, यह मैं सच कहता हूँ, और आप तो सबके अन्तर्यामी हैं। हे रघुकुल श्रेष्ठ, मुझे अपनी पूर्ण भक्ति दीजिए और मेरे मन को काम आदि दोषों से मुक्त कर दीजिए।",
+   "en": "O Lord of the Raghus, there is no other longing in my heart; I speak the truth, and you are the inner self of all. O best of the Raghus, grant me complete devotion and free my mind from desire and every other fault.",
+   "ctx_hi": "भक्त केवल भक्ति और निर्मल मन की माँग करता है।",
+   "ctx_en": "The devotee asks only for devotion and a pure mind.",
+   "src": {"page": 850, "quality": 1}
+  }},
+  {"after": "sk-005", "verse": {
+   "id": "sk-p03", "type": "चौपाई", "n": "1.5", "status": "draft",
+   "lines": ["जलनिधि रघुपति दूत बिचारी। तैं मैनाक होहि श्रम हारी॥५॥"],
+   "tr": ["jalanidhi raghupati dūta bicārī | taiṃ maināka hohi śrama hārī ||"],
+   "words": [["जलनिधि", "समुद्र", "the Ocean"], ["दूत", "संदेशवाहक", "messenger"], ["मैनाक", "मैनाक पर्वत", "Mount Mainaka"], ["श्रम हारी", "थकान मिटाने वाला", "remover of fatigue"]],
+   "hi": "समुद्र ने हनुमान जी को श्रीराम का दूत जानकर मैनाक पर्वत से कहा कि तुम ऊपर उठकर इनकी थकान दूर करो।",
+   "en": "The Ocean, knowing him to be Rama's messenger, told Mount Mainaka to rise and relieve his weariness.",
+   "ctx_hi": "समुद्र भी राम-काज में सहायता करना चाहता है।",
+   "ctx_en": "Even the Ocean wants to help in Rama's work.",
+   "src": {"page": 854, "quality": 3}
+  }}
+ ],
+ "override": {
+  "sk-001": {"n": "3", "lines": ["अतुलितबलधामं स्वर्णशैलाभदेहं दनुजवनकृशानुं ज्ञानिनामग्रगण्यम्।", "सकलगुणनिधानं वानराणामधीशं रघुपतिवरदूतं वातजातं नमामि॥३॥"]}
+ }
+}

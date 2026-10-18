@@ -360,6 +360,14 @@ async function loadKand(id){
     const d=await r.json(); VERSES=(d.verses||[]).filter(v=>v.lines&&v.lines.length);
     SCENES=d.scenes||[];
     try{
+      const pr=await fetch("data/"+id+".patch.json",{cache:"no-cache"});
+      if(pr.ok){const pd=await pr.json();
+        Object.entries(pd.override||{}).forEach(([vid,ch])=>{const v=VERSES.find(x=>x.id===vid); if(v)Object.assign(v,ch)});
+        (pd.insert||[]).forEach(ins=>{ if(VERSES.some(x=>x.id===ins.verse.id))return;
+          const i=ins.after?VERSES.findIndex(x=>x.id===ins.after):-1;
+          if(ins.after&&i<0)return; VERSES.splice(i+1,0,ins.verse)});}
+    }catch(e){}
+    try{
       const sr=await fetch("data/"+id+".scenes.json",{cache:"no-cache"});
       if(sr.ok){const sd=await sr.json(); SCENES=(sd.scenes||[]).map(x=>({...x,prompt:x.prompt+(sd.style?", "+sd.style:"")}));
         const sorted=[...SCENES].sort((a,b)=>a.from-b.from);
