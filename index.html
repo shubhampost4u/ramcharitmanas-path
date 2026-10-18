@@ -1,5 +1,9 @@
 <title>Ramcharitmanas Path</title>
 <meta name="claude:viewport-fit-sides" content="cover">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#312E81">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&family=Mukta:wght@400;500;700&display=swap">
@@ -104,6 +108,9 @@ header{padding-block:28px 12px;display:grid;gap:14px}
 footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);display:grid;gap:12px}
 .upi{display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;color:var(--ink)}
 .upi code{font-size:15px;user-select:all}
+.review{font-size:13px;border:1px dashed var(--accent);border-radius:8px;padding:8px 10px;display:grid;gap:4px}
+.review a{color:var(--primary)}
+.review .sug{font-family:var(--f-verse);font-size:16px}
 .empty{padding:30px 0;color:var(--muted);text-align:center}
 .toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(84px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:8px;font-size:14px;z-index:9;max-width:calc(100% - 32px)}
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
@@ -156,6 +163,7 @@ footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);font-si
 <script>
 /* ---------- CONFIG ---------- */
 const CONFIG = { upi: "yourname@upi" };
+const REVIEW = location.hash === "#review";
 
 /* ---------- DATA (Sundar Kand, opening) ----------
    Per verse:  audio: { verse:"audio/sk-002.mp3", exp_hi:"audio/sk-002-hi.mp3", exp_en:"audio/sk-002-en.mp3" }
@@ -192,7 +200,7 @@ function renderKands(){
 function matches(v){
   if(bmOnly && !bookmarks.has(v.id)) return false;
   if(!query) return true;
-  const hay=(v.lines.join(" ")+" "+v.tr.join(" ")+" "+v.hi+" "+v.en+" "+v.words.map(w=>w.join(" ")).join(" ")).toLowerCase();
+  const hay=(v.lines.join(" ")+" "+(v.tr||[]).join(" ")+" "+(v.hi||"")+" "+(v.en||"")+" "+(v.words||[]).map(w=>w.join(" ")).join(" ")).toLowerCase();
   return hay.includes(query);
 }
 function verseHTML(v){
@@ -210,8 +218,9 @@ function verseHTML(v){
         <button role="tab" data-tab="en" aria-selected="${tab==='en'}">English</button>
       </div>
       <div class="panel" role="tabpanel">${tab==='hi'
-        ? `<p>${esc(v.hi)}</p>${v.ctx_hi?`<p class="ctx">भाव: ${esc(v.ctx_hi)}</p>`:''}`
-        : `<p>${esc(v.en)}</p>${v.ctx_en?`<p class="ctx">Context: ${esc(v.ctx_en)}</p>`:''}`}</div>
+        ? (v.hi?`<p>${esc(v.hi)}</p>`:'<p class="ctx">अर्थ जल्द जोड़ा जाएगा।</p>')+(v.ctx_hi?`<p class="ctx">भाव: ${esc(v.ctx_hi)}</p>`:'')
+        : (v.en?`<p>${esc(v.en)}</p>`:'<p class="ctx">Meaning coming soon.</p>')+(v.ctx_en?`<p class="ctx">Context: ${esc(v.ctx_en)}</p>`:'')}</div>
+      ${REVIEW?reviewHTML(v):''}
       <div class="acts">
         <button class="btn pri" data-act="recite">▶ पाठ करें</button>
         <button class="btn" data-act="exp-hi">व्याख्या सुनें</button>
@@ -221,6 +230,12 @@ function verseHTML(v){
     </div>`;
   }
   return h+`</article>`;
+}
+function reviewHTML(v){
+  const dev=n=>String(n).replace(/[0-9]/g,c=>'०१२३४५६७८९'[c]);
+  const src=v.src&&v.src.page?`https://hi.wikisource.org/wiki/${encodeURIComponent('पृष्ठ:रामचरितमानस.pdf/'+dev(v.src.page))}`:'';
+  return `<div class="review"><b>Review</b> · ${esc(v.id)} · status: ${esc(v.status||'')}${src?` · <a href="${src}" target="_blank" rel="noopener">source page ${v.src.page}</a>`:''}
+    ${v.suggested_lines?`<div>Possible text correction:</div>${v.suggested_lines.map(l=>`<div class="sug">${esc(l)}</div>`).join('')}`:''}</div>`;
 }
 function sceneHTML(s){
   const ph=`<div class="ph"${s.image?' hidden':''}><b>Illustration slot · FLUX prompt</b><p>${esc(s.prompt)}</p><button data-copy="${esc(s.prompt)}">Copy prompt</button></div>`;
@@ -342,7 +357,14 @@ async function loadKand(id){
   $("#list").innerHTML='<div class="empty">Loading…</div>';
   try{
     const r=await fetch("data/"+id+".json",{cache:"no-cache"}); if(!r.ok) throw new Error(r.status);
-    const d=await r.json(); SCENES=d.scenes||[]; VERSES=(d.verses||[]).filter(v=>v.lines&&v.lines.length);
+    const d=await r.json(); VERSES=(d.verses||[]).filter(v=>v.lines&&v.lines.length);
+    SCENES=d.scenes||[];
+    try{
+      const sr=await fetch("data/"+id+".scenes.json",{cache:"no-cache"});
+      if(sr.ok){const sd=await sr.json(); SCENES=(sd.scenes||[]).map(x=>({...x,prompt:x.prompt+(sd.style?", "+sd.style:"")}));
+        const sorted=[...SCENES].sort((a,b)=>a.from-b.from);
+        VERSES.forEach(v=>{const g=v.type==="श्लोक"?0:parseInt(v.n,10)||0; let sc=sorted[0]; for(const x of sorted){if(x.from<=g)sc=x}; if(sc)v.scene=sc.id});}
+    }catch(e){}
   }catch(e){$("#list").innerHTML='<div class="empty">Could not load data/'+id+'.json. Open this app from a web server (GitHub Pages, Netlify), not as a local file.</div>';return}
   const last=store.get("last",null);
   openId = VERSES.some(v=>v.id===last) ? last : (VERSES[0]&&VERSES[0].id);
@@ -350,4 +372,7 @@ async function loadKand(id){
   render();
 }
 loadKand("sundar");
+if("serviceWorker" in navigator && location.protocol==="https:" && !/claude/.test(location.hostname)){
+  navigator.serviceWorker.register("sw.js").catch(()=>{});
+}
 </script>

@@ -8,8 +8,9 @@ Static site, no build step. Host on GitHub Pages, Cloudflare Pages or Netlify.
 
 ```
 index.html          the app
-data/<kand>.json    one file per Kand (sundar, bal, ayodhya, aranya, kishkindha, lanka, uttar)
-source/<kand>.txt   base text, one verse per block (input for the n8n workflow)
+data/<kand>.json          verses and meanings, one file per Kand (written by the n8n workflow)
+data/<kand>.scenes.json   scenes: which doha group each illustration starts at, plus its image prompt
+source/<kand>.json        original lines with the public-domain commentary, gaps and duplicates found
 images/             scene illustrations (FLUX.1 schnell), WebP under 200 KB
 audio/              recitation and explanation mp3 files
 ```
@@ -31,3 +32,21 @@ audio/              recitation and explanation mp3 files
 | `timestamps` | optional ms where each line starts in `audio.verse` |
 
 Meanings are AI-assisted drafts (Gemini via n8n) and must be reviewed by a scholar before `status` is set to `approved`. The original text is public domain; no copyrighted translation is used.
+
+## Workflow
+
+The n8n workflow **Ramcharitmanas: translate and save to GitHub** reads a Kand from the PD-1996 edition on Hindi Wikisource, drafts meanings with Gemini (using the edition's own public-domain commentary as reference) and commits `data/<kand>.json` and `source/<kand>.json`. Change the Kand, page range and `testLimit` in its Settings node.
+
+Gaps: a few scan pages have no proofread text on Wikisource. They are listed in `source/<kand>.json → gaps` with the verses on either side; those verses must be added by hand.
+
+## Review mode
+
+Open the app with `#review` at the end of the URL. Each verse then shows its id, status, a link to its Wikisource scan page and any text correction Gemini suggested (`suggested_lines`). Corrections are never applied automatically.
+
+## Images
+
+`data/sundar.scenes.json` holds one prompt per scene plus a shared style. Generate with FLUX.1 [schnell] (Apache-2.0, commercial use allowed), 16:7 or 1600×700, convert to WebP under 200 KB, and save as `images/sundar/sXX.webp`. Until a file exists the app shows the prompt in its place.
+
+## Offline
+
+`manifest.webmanifest` and `sw.js` make the app installable and usable offline once hosted on HTTPS (GitHub Pages). Bump `VERSION` in `sw.js` after changing the app so phones pick up the new version.
