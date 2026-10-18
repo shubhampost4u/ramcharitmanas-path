@@ -1,0 +1,41 @@
+{
+ "kand": "sundar",
+ "model": "bulbul:v4-flash",
+ "speaker": "mani_hi_devotional",
+ "pace": 0.85,
+ "updated": "2026-10-18T12:36:25.499Z",
+ "verses": {
+  "sk-001": {
+   "file": "audio/sundar/sk-001.mp3",
+   "timestamps": [
+    0,
+    9072
+   ],
+   "duration": 18240
+  },
+  "sk-002": {
+   "file": "audio/sundar/sk-002.mp3",
+   "timestamps": [
+    0,
+    6552
+   ],
+   "duration": 12144
+  },
+  "sk-003": {
+   "file": "audio/sundar/sk-003.mp3",
+   "timestamps": [
+    0,
+    6720
+   ],
+   "duration": 13080
+  },
+  "sk-004": {
+   "file": "audio/sundar/sk-004.mp3",
+   "timestamps": [
+    0,
+    6456
+   ],
+   "duration": 13392
+  }
+ }
+}
