@@ -43,6 +43,10 @@ Gaps: a few scan pages have no proofread text on Wikisource. They are listed in 
 
 The n8n workflow **Ramcharitmanas: voice verses (Sarvam)** voices every verse line by line with Sarvam Bulbul v4 Flash (`mani_hi_devotional`, pace 0.85), joins the lines into `audio/<kand>/<id>.mp3` and records each line's start time in `data/<kand>.audio.json`. The app plays these files and highlights the line being recited; explanations use the device voice. Run it in chunks (Settings → testLimit, e.g. 60): each run skips verses already voiced. If a verse's text is corrected, delete its mp3 and its entry in the audio manifest, then run again.
 
+### Open-source voices
+
+`tools/oss_tts.py` voices the verses with an open-source engine on a free Colab GPU: AI4Bharat Indic Parler-TTS (voice and pace set by a text description) or AI4Bharat IndicF5 (copies voice and recitation style from a short reference recording). Run `--test` first to hear five verses, then the whole Kand. Output goes to `audio/<kand>-<engine>/` and `data/<kand>.audio.<engine>.json`; `--as-default` makes it the voice the app plays. Usage is at the top of the script.
+
 ## Review mode
 
 Open the app with `#review` at the end of the URL. Each verse then shows its id, status, a link to its Wikisource scan page and any text correction Gemini suggested (`suggested_lines`). Corrections are never applied automatically.
