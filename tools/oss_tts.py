@@ -73,7 +73,7 @@ def push():
         sys.exit("Set GITHUB_TOKEN first.")
     run(["git", "config", "user.name", "Ramcharitmanas TTS"])
     run(["git", "config", "user.email", "shubhampost4u@users.noreply.github.com"])
-    run(["git", "add", "--"] + [d for d in ("audio", "audio-test", "data") if os.path.exists(d)])
+    run(["git", "add", "--"] + [d for d in ("audio", "data") if os.path.exists(d)])
     if subprocess.run(["git", "diff", "--cached", "--quiet"]).returncode == 0:
         print("Nothing new to push.")
         return
