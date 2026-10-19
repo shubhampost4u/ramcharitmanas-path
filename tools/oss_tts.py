@@ -41,6 +41,12 @@ import tempfile
 
 import numpy as np
 
+# Colab ships TensorFlow; older transformers versions then try to load it and fail.
+# These models only need PyTorch.
+os.environ.setdefault("USE_TF", "0")
+os.environ.setdefault("USE_TORCH", "1")
+os.environ.setdefault("TF_CPP_MIN_LOG_LEVEL", "3")
+
 REPO = "shubhampost4u/ramcharitmanas-path"
 TEST_IDS = ["sk-p01", "sk-002", "sk-006", "sk-052", "sk-120"]
 PARLER_VOICE = ("Rohit speaks slowly and calmly in a deep, warm voice, reciting devotional verse "
