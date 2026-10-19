@@ -15,7 +15,7 @@ Or run on a free Google Colab GPU (Runtime > Change runtime type > T4 GPU):
     !git clone https://github.com/shubhampost4u/ramcharitmanas-path
     %cd ramcharitmanas-path
     !pip -q install -r tools/oss_tts_requirements.txt
-    from huggingface_hub import login; login()      # account must have accepted the model's terms
+    from huggingface_hub import login; from getpass import getpass; login(token=getpass("HF token: "))      # account must have accepted the model's terms
 
     # 1) listen to 5 verses first (written to audio-test/<engine>/)
     !python tools/oss_tts.py --engine parler --test
