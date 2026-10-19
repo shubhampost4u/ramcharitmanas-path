@@ -7,7 +7,10 @@ Engines
            Give it a 8-15 s recording of a chaupai recited the way you want (your own voice,
            or someone who has given permission) plus the exact words in that clip.
 
-Run on a free Google Colab GPU (Runtime > Change runtime type > T4 GPU):
+Easiest: open tools/oss_tts.ipynb in Colab and run the cells in order:
+https://colab.research.google.com/github/shubhampost4u/ramcharitmanas-path/blob/main/tools/oss_tts.ipynb
+
+Or run on a free Google Colab GPU (Runtime > Change runtime type > T4 GPU):
 
     !git clone https://github.com/shubhampost4u/ramcharitmanas-path
     %cd ramcharitmanas-path
@@ -70,7 +73,7 @@ def push():
         sys.exit("Set GITHUB_TOKEN first.")
     run(["git", "config", "user.name", "Ramcharitmanas TTS"])
     run(["git", "config", "user.email", "shubhampost4u@users.noreply.github.com"])
-    run(["git", "add", "audio", "audio-test", "data"])
+    run(["git", "add", "--"] + [d for d in ("audio", "audio-test", "data") if os.path.exists(d)])
     if subprocess.run(["git", "diff", "--cached", "--quiet"]).returncode == 0:
         print("Nothing new to push.")
         return
